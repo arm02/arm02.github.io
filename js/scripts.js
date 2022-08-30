@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Resume v7.0.5 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2022 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -17,8 +8,6 @@ window.addEventListener('DOMContentLoaded', event => {
             offset: 74,
         });
     };
-
-    // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
@@ -30,5 +19,16 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
 });
+
+
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "GOOD MORNING !";
+} else if (time < 20) {
+  greeting = "GOOD AFTERNOON !";
+} else {
+  greeting = "GOOD EVENING !";
+}
+document.getElementById("time").innerHTML = greeting;

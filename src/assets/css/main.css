@@ -69,10 +69,6 @@ ul {
 	margin: 0;
 }
 
-@font-face {
-	font-family: 'Inter', sans-serif;
-}
-
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -81,7 +77,6 @@ select:-webkit-autofill {
 	color: #000;
 }
 
-/* 1.2 Typography */
 h1,
 h2,
 h3,
@@ -101,10 +96,7 @@ img {
 	height: auto;
 }
 
-/*-----------------------------------------------------------------
-  1. >>> Headr Style
-----------------------------------------------------------------*/
-.ds-header {
+.arm-header {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -117,18 +109,18 @@ img {
 	transition-timing-function: ease;
 }
 
-.ds-header.ds-fixed-header {
+.arm-header.arm-fixed-header {
 	padding: 20px 0;
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
-.ds-header-inner {
+.arm-header-inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.ds-logo {
+.arm-logo {
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 3px;
@@ -137,7 +129,7 @@ img {
 	align-items: center;
 }
 
-.ds-logo span {
+.arm-logo span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -152,26 +144,26 @@ img {
 	margin-right: 12px;
 }
 
-.ds-logo:hover {
+.arm-logo:hover {
 	color: #000;
 }
 
-.ds-social {
+.arm-social {
 	list-style: none;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.ds-social li {
+.arm-social li {
 	margin-left: 12px;
 }
 
-.ds-social li:first-child {
+.arm-social li:first-child {
 	margin-left: 0;
 }
 
-.ds-social li a {
+.arm-social li a {
 	border-radius: 100%;
 	color: #FFF;
 	width: 24px;
@@ -184,17 +176,17 @@ img {
 	font-size: 16px;
 }
 
-.ds-social li a:hover {
+.arm-social li a:hover {
 	background-color: #000;
 	color: #FFF;
 }
 
-.ds-banner section {
+.arm-banner section {
 	padding-left: 70px;
 	padding-right: 100px;
 }
 
-.ds-banner section h1 span {
+.arm-banner section h1 span {
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -203,14 +195,14 @@ img {
 	padding-bottom: 30px;
 }
 
-.ds-banner section h1 {
+.arm-banner section h1 {
 	font-weight: 600;
 	font-size: 48px;
 	line-height: 60px;
 	color: #000;
 }
 
-.ds-numbervalulist {
+.arm-numbervalulist {
 	list-style: none;
 	display: flex;
 	align-items: center;
@@ -220,32 +212,32 @@ img {
 	margin-top: 60px;
 }
 
-.ds-numbervalulist li {
+.arm-numbervalulist li {
 	margin-right: 60px;
 }
 
-.ds-numbervalulist li:last-child {
+.arm-numbervalulist li:last-child {
 	margin-right: 0;
 }
 
-.ds-numbervalulist strong {
+.arm-numbervalulist strong {
 	display: block;
 	color: #57b2f7;
 	font-size: 36px;
 	font-weight: 800;
 }
 
-.ds-numbervalulist span {
+.arm-numbervalulist span {
 	font-size: 16px;
 	letter-spacing: 1px;
 }
 
-.ds-about-section {
+.arm-about-section {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
 
-.ds-heading {
+.arm-heading {
 	display: inline-block;
 	font-weight: 700;
 	color: #000;
@@ -257,7 +249,7 @@ img {
 	margin-bottom: 23px;
 }
 
-.ds-about-section p {
+.arm-about-section p {
 	color: #373737;
 	font-size: 24px;
 	line-height: 40px;
@@ -265,7 +257,7 @@ img {
 	text-align: justify;
 }
 
-.ds-button {
+.arm-button {
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 12px;
@@ -278,21 +270,21 @@ img {
 	border-radius: 60px;
 }
 
-.ds-button:hover {
+.arm-button:hover {
 	background-color: #57b2f7;
 	color: #FFF;
 }
 
-.ds-arrow-button i {
+.arm-arrow-button i {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.ds-skills-section {
+.arm-skills-section {
 	padding-bottom: 60px;
 }
 
-.ds-skills-list {
+.arm-skills-list {
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -302,7 +294,7 @@ img {
 	margin-top: 11px;
 }
 
-.ds-skills-list li {
+.arm-skills-list li {
 	display: inline-block;
 	color: #373737;
 	font-size: 16px;
@@ -315,57 +307,57 @@ img {
 	font-weight: 500;
 }
 
-.ds-experience-section {
+.arm-experience-section {
 	padding-bottom: 10px;
 }
 
-.ds-experience-list section {
+.arm-experience-list section {
 	padding-right: 70px;
 }
 
-.ds-experience-list {
+.arm-experience-list {
 	padding-top: 15px;
 }
 
-.ds-officename {
+.arm-officename {
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 10px;
 }
 
-.ds-experience-list span {
+.arm-experience-list span {
 	display: block;
 }
 
-span.ds-year {
+span.arm-year {
 	color: #373737;
 	font-size: 14px;
 	font-weight: 700;
 	padding-bottom: 10px;
 }
 
-span.ds-department {
+span.arm-department {
 	color: #373737;
 	font-weight: 500;
 	font-size: 18px;
 	padding-bottom: 15px;
 }
 
-.ds-experience-list p {
+.arm-experience-list p {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
 	text-align: justify;
 }
 
-.ds-experience-list ul {
+.arm-experience-list ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	padding-top: 10px;
 }
 
-.ds-experience-list ul li {
+.arm-experience-list ul li {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
@@ -374,7 +366,7 @@ span.ds-department {
 	margin-bottom: 20px;
 }
 
-.ds-experience-list ul li:before {
+.arm-experience-list ul li:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -385,11 +377,11 @@ span.ds-department {
 	background-color: #373737;
 }
 
-.ds-work-section {
+.arm-work-section {
 	padding-bottom: 80px;
 }
 
-.ds-work-list {
+.arm-work-list {
 	padding-left: 70px;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -399,12 +391,12 @@ span.ds-department {
 	border-radius: 7px;
 }
 
-.ds-work-list section {
+.arm-work-list section {
 	padding-top: 20px;
 	padding-right: 120px;
 }
 
-.ds-work-tilte {
+.arm-work-tilte {
 	color: #000;
 	font-size: 30px;
 	line-height: 36px;
@@ -412,59 +404,59 @@ span.ds-department {
 	margin-bottom: 30px;
 }
 
-.ds-work-list p {
+.arm-work-list p {
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 30px;
 	text-align: justify;
 }
 
-.ds-work-list .ds-button {
+.arm-work-list .arm-button {
 	margin-top: 20px;
 }
 
-.ds-work-det-hed {
+.arm-work-det-hed {
 	padding-top: 42px;
 	padding-bottom: 80px;
 }
 
-.ds-work-det-title {
+.arm-work-det-title {
 	font-weight: 600;
 	color: #000;
 	font-size: 48px;
 	margin-bottom: 20px;
 }
 
-.ds-work-det-dep {
+.arm-work-det-dep {
 	display: block;
 	font-weight: 600;
 	color: #000;
 	font-size: 18px;
 }
 
-.ds-work-content-sec {
+.arm-work-content-sec {
 	padding: 100px 0;
 }
 
-.ds-work-content-sec p {
+.arm-work-content-sec p {
 	font-size: 18px;
 	line-height: 36px;
 	margin-bottom: 30px;
 }
 
-.ds-work-content-sec h2 {
+.arm-work-content-sec h2 {
 	font-size: 30px;
 	font-weight: 700;
 	margin-bottom: 30px;
 }
 
-.ds-work-content-sec ul {
+.arm-work-content-sec ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.ds-work-content-sec li {
+.arm-work-content-sec li {
 	font-size: 18px;
 	line-height: 36px;
 	padding-left: 28px;
@@ -472,7 +464,7 @@ span.ds-department {
 	margin-bottom: 20px;
 }
 
-.ds-work-content-sec li:before {
+.arm-work-content-sec li:before {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -483,16 +475,16 @@ span.ds-department {
 	background-color: #373737;
 }
 
-.ds-footer {
+.arm-footer {
 	background-color: #000;
 	padding: 120px 0;
 }
 
-.ds-footer section {
+.arm-footer section {
 	padding-bottom: 97px;
 }
 
-.ds-footer section span {
+.arm-footer section span {
 	color: rgba(255, 255, 255, 0.5);
 	text-transform: uppercase;
 	font-weight: 700;
@@ -502,189 +494,189 @@ span.ds-department {
 	padding-bottom: 20px;
 }
 
-.ds-footer section h4 {
+.arm-footer section h4 {
 	color: #FFF;
 	font-size: 48px;
 	font-weight: 700;
 }
 
-.ds-footer section p {
+.arm-footer section p {
 	letter-spacing: 1.13px;
 	color: #FFF;
 	font-size: 18px;
 	margin-bottom: 40px;
 }
 
-.ds-copyright {
+.arm-copyright {
 	color: rgba(255, 255, 255, 0.5);
 	letter-spacing: 1px;
 	font-size: 16px;
 }
 
-.ds-copyright a {
+.arm-copyright a {
 	color: rgba(255, 255, 255, 0.5);
 }
 
-.ds-copyright a:hover {
+.arm-copyright a:hover {
 	color: #57b2f7;
 }
 
-.ds-logo-image {
+.arm-logo-image {
 	border-radius: 10px;
 }
 
-.ds-award {
+.arm-award {
 	padding: 15px;
 	font-size: 18px;
 	font-weight: 300;
 }
 
-.ds-logo-title-web {
+.arm-logo-title-web {
 	display: flex;
 }
 
-.ds-logo-title-mobile {
+.arm-logo-title-mobile {
 	display: none;
 }
 
 @media (max-width: 768px) {
-	.ds-logo-title-web {
+	.arm-logo-title-web {
 		display: none;
 	}
 
-	.ds-logo-title-mobile {
+	.arm-logo-title-mobile {
 		display: flex;
 	}
 
-	.ds-header,
-	.ds-header.ds-fixed-header {
+	.arm-header,
+	.arm-header.arm-fixed-header {
 		padding: 15px 0;
 	}
 
-	.ds-banner,
-	.ds-about-section,
-	.ds-skills-section,
-	.ds-experience-section,
-	.ds-work-section,
-	.ds-work-details-section {
+	.arm-banner,
+	.arm-about-section,
+	.arm-skills-section,
+	.arm-experience-section,
+	.arm-work-section,
+	.arm-work-details-section {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
 
-	.ds-banner figure {
+	.arm-banner figure {
 		padding: 30px 0;
 	}
 
-	.ds-banner section {
+	.arm-banner section {
 		padding-left: 0;
 		padding-right: 0;
 	}
 
-	.ds-banner section h1 span {
+	.arm-banner section h1 span {
 		padding-bottom: 0;
 	}
 
-	.ds-banner section h1,
-	.ds-work-det-title {
+	.arm-banner section h1,
+	.arm-work-det-title {
 		font-size: 30px;
 		line-height: 40px;
 	}
 
-	.ds-numbervalulist {
+	.arm-numbervalulist {
 		margin-top: 20px;
 	}
 
-	.ds-numbervalulist li {
+	.arm-numbervalulist li {
 		margin-right: 30px;
 	}
 
-	.ds-numbervalulist strong {
+	.arm-numbervalulist strong {
 		font-size: 30px;
 	}
 
-	.ds-numbervalulist span {
+	.arm-numbervalulist span {
 		font-size: 14px;
 	}
 
-	.ds-about-section {
+	.arm-about-section {
 		padding-bottom: 60px;
 	}
 
-	.ds-about-section p,
-	.ds-work-content-sec p,
-	.ds-work-content-sec li {
+	.arm-about-section p,
+	.arm-work-content-sec p,
+	.arm-work-content-sec li {
 		font-size: 15px;
 		line-height: 30px;
 		margin-bottom: 30px;
 	}
 
-	.ds-skills-list li {
+	.arm-skills-list li {
 		margin-right: 10px;
 		margin-bottom: 10px;
 		font-size: 14px;
 	}
 
-	.ds-skills-section .col-12,
-	.ds-experience-list .col-12 {
+	.arm-skills-section .col-12,
+	.arm-experience-list .col-12 {
 		margin-bottom: 40px;
 	}
 
-	.ds-skills-section,
-	.ds-work-section,
-	.ds-experience-section {
+	.arm-skills-section,
+	.arm-work-section,
+	.arm-experience-section {
 		padding-bottom: 0;
 	}
 
-	.ds-experience-list section {
+	.arm-experience-list section {
 		padding-right: 0;
 	}
 
-	.ds-work-list {
+	.arm-work-list {
 		padding: 30px;
 	}
 
-	.ds-work-list p {
+	.arm-work-list p {
 		font-size: 15px;
 		line-height: 30px;
 	}
 
-	.ds-footer {
+	.arm-footer {
 		padding: 60px 10px;
 	}
 
-	.ds-footer section h4 {
+	.arm-footer section h4 {
 		font-size: 40px;
 	}
 
-	.ds-copyright {
+	.arm-copyright {
 		font-size: 14px;
 	}
 
-	.ds-footer section {
+	.arm-footer section {
 		padding-bottom: 30px;
 	}
 
-	.ds-button {
+	.arm-button {
 		padding: 11px 10px;
 	}
 
-	.ds-work-details-section {
+	.arm-work-details-section {
 		padding-top: 30px;
 	}
 
-	.ds-work-det-title {
+	.arm-work-det-title {
 		margin-bottom: 7px;
 	}
 
-	.ds-work-content-sec h2 {
+	.arm-work-content-sec h2 {
 		font-size: 20px;
 	}
 
-	.ds-work-content-sec {
+	.arm-work-content-sec {
 		padding: 30px 0;
 	}
 
-	.ds-work-list section {
+	.arm-work-list section {
 		padding-right: 0;
 		padding-bottom: 30px;
 	}
@@ -692,18 +684,18 @@ span.ds-department {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-	.ds-work-list section {
+	.arm-work-list section {
 		padding-right: 30px;
 	}
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-	.ds-banner section {
+	.arm-banner section {
 		padding-right: 0;
 	}
 
-	.ds-work-list section {
+	.arm-work-list section {
 		padding-right: 30px;
 		padding-bottom: 60px;
 	}

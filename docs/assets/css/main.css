@@ -234,7 +234,6 @@ img {
 
 .arm-about-section {
 	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .arm-heading {
@@ -598,10 +597,6 @@ span.arm-department {
 		font-size: 14px;
 	}
 
-	.arm-about-section {
-		padding-bottom: 60px;
-	}
-
 	.arm-about-section p,
 	.arm-work-content-sec p,
 	.arm-work-content-sec li {
@@ -698,5 +693,73 @@ span.arm-department {
 	.arm-work-list section {
 		padding-right: 30px;
 		padding-bottom: 60px;
+	}
+}
+
+
+.download-resume {
+	margin-bottom: 45px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+}
+
+.download-resume a {
+	display: flex;
+}
+
+.download-resume a:hover>span>* {
+	background: #fff;
+}
+
+.arm-loading-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.dot {
+	width: 7px;
+	height: 7px;
+	background: #57b2f7;
+	display: inline-block;
+	border-radius: 50%;
+	right: 0px;
+	bottom: 0px;
+	margin: 0px 2.5px;
+	position: relative;
+	animation: jump 1s infinite;
+}
+
+.arm-loading-container:hover>* {
+	background: #fff;
+}
+
+.arm-loading-container .dot-1 {
+	-webkit-animation-delay: 100ms;
+	animation-delay: 100ms;
+}
+
+.arm-loading-container .dot-2 {
+	-webkit-animation-delay: 200ms;
+	animation-delay: 200ms;
+}
+
+.arm-loading-container .dot-3 {
+	-webkit-animation-delay: 300ms;
+	animation-delay: 300ms;
+}
+
+@keyframes jump {
+	0% {
+		bottom: 0px;
+	}
+
+	20% {
+		bottom: 5px;
+	}
+
+	40% {
+		bottom: 0px;
 	}
 }

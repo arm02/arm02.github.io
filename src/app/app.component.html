@@ -1,45 +1,47 @@
-<header class="arm-header" id="site-header">
-  <div class="container">
-    <div class="arm-header-inner">
-      <a href="/" class="arm-logo arm-logo-title-web">
-        <span>A</span>{{ profile.fullName }}</a
-      >
-      <a href="/" class="arm-logo arm-logo-title-mobile">
-        <span>A</span>{{ profile.shortName }}</a
-      >
-      <ul class="arm-social">
-        <li>
-          <a [href]="profile.social.github" target="_blank"
-            ><i class="ri-github-fill"></i
-          ></a>
-        </li>
-        <li>
-          <a [href]="profile.social.gitlab" target="_blank"
-            ><i class="ri-gitlab-fill"></i
-          ></a>
-        </li>
-        <li>
-          <a [href]="profile.social.linkedin" target="_blank"
-            ><i class="ri-linkedin-fill"></i
-          ></a>
-        </li>
-        <li>
-          <a [href]="profile.contact.whatsapps" target="_blank"
-            ><i class="ri-whatsapp-line"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            style="color: white; cursor: pointer"
-            (click)="copyToClipboard(profile.contact.phone)"
-            ><i class="ri-phone-fill"></i
-          ></a>
-        </li>
-      </ul>
+<div>
+  <header class="arm-header" id="site-header">
+    <div class="container">
+      <div class="arm-header-inner">
+        <a href="/" class="arm-logo arm-logo-title-web">
+          <span>A</span>{{ profile.fullName }}</a
+        >
+        <a href="/" class="arm-logo arm-logo-title-mobile">
+          <span>A</span>{{ profile.shortName }}</a
+        >
+        <ul class="arm-social">
+          <li>
+            <a [href]="profile.social.github" target="_blank"
+              ><i class="ri-github-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a [href]="profile.social.gitlab" target="_blank"
+              ><i class="ri-gitlab-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a [href]="profile.social.linkedin" target="_blank"
+              ><i class="ri-linkedin-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a [href]="profile.contact.whatsapps" target="_blank"
+              ><i class="ri-whatsapp-line"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              style="color: white; cursor: pointer"
+              (click)="copyToClipboard(profile.contact.phone)"
+              ><i class="ri-phone-fill"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</header>
-<div class="arm-banner">
+  </header>
+</div>
+<div class="arm-banner" id="bannerData" #bannerData>
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
@@ -79,21 +81,27 @@
     </div>
   </div>
 </div>
-<div class="arm-about-section">
+<div class="arm-about-section" id="aboutData" #aboutData>
   <div class="container">
     <section>
       <h2 class="arm-heading">About Me</h2>
       <div [innerHTML]="profile.aboutMe"></div>
-      <div class="arm-button-sec text-center">
-        <a [href]="profile.resumeLink" class="arm-button" target="_blank"
-          >Download Resume</a
-        >
-      </div>
     </section>
   </div>
 </div>
 
-<div class="arm-skills-section">
+<div class="arm-button-sec text-center download-resume">
+  <a (click)="downloadResume()" class="arm-button" target="_blank">
+    {{ isLoading ? isLoadingNumber + " Loading..." : "Download Resume" }}
+    <!-- <span *ngIf="isLoading" class="arm-loading-container">
+      <span class="dot dot-1"></span>
+      <span class="dot dot-2"></span>
+      <span class="dot dot-3"></span>
+    </span> -->
+  </a>
+</div>
+
+<div class="arm-skills-section" id="skillsData" #skillsData>
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -114,7 +122,7 @@
   </div>
 </div>
 
-<div class="arm-experience-section">
+<div class="arm-experience-section" id="educationData" #educationData>
   <div class="container">
     <h2 class="arm-heading">Education</h2>
     <div class="row arm-experience-list">
@@ -133,7 +141,7 @@
   </div>
 </div>
 
-<div class="arm-experience-section">
+<div class="arm-experience-section" id="experienceData" #experienceData>
   <div class="container">
     <h2 class="arm-heading">Work Experience</h2>
     <div class="row arm-experience-list">
@@ -153,7 +161,7 @@
     </div>
   </div>
 </div>
-<div class="arm-skills-section">
+<div class="arm-skills-section" id="awardData" #awardData>
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -167,9 +175,16 @@
 </div>
 <div class="arm-work-section">
   <div class="container">
-    <h2 class="arm-heading">Latest works</h2>
+    <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
+      Latest works
+    </h2>
     <div class="arm-work-list-section">
-      <div class="arm-work-list" *ngFor="let latestWork of profile.latestWork">
+      <div
+        class="arm-work-list"
+        *ngFor="let latestWork of profile.latestWork; let i = index"
+        id="latestWorkData{{ i }}"
+        #latestWorkData{{i}}
+      >
         <div class="row">
           <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
             <section>

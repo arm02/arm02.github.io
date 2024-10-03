@@ -24,7 +24,7 @@
               ><i class="ri-linkedin-fill"></i
             ></a>
           </li>
-          <li>
+          <!-- <li>
             <a [href]="profile.contact.whatsapps" target="_blank"
               ><i class="ri-whatsapp-line"></i
             ></a>
@@ -35,7 +35,7 @@
               (click)="copyToClipboard(profile.contact.phone)"
               ><i class="ri-phone-fill"></i
             ></a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
@@ -91,7 +91,7 @@
 </div>
 
 <div class="arm-button-sec text-center download-resume">
-  <a (click)="downloadResume()" class="arm-button" target="_blank">
+  <a (click)="downloadNewResume()" class="arm-button" target="_blank">
     {{ isLoading ? isLoadingNumber + " Loading..." : "Download Resume" }}
     <!-- <span *ngIf="isLoading" class="arm-loading-container">
       <span class="dot dot-1"></span>

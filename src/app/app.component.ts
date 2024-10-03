@@ -37,6 +37,10 @@ export class AppComponent {
     });
   }
 
+  downloadNewResume() {
+    window.open(this.profile.resumeLink, '_blank');
+  }
+
   public downloadResume() {
     this.isLoadingNumber += 6;
     this.isLoading = true;

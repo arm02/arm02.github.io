@@ -8,4 +8,4 @@ export const appConfig: ApplicationConfig = {
 };
 
 export const JSON_PROFILE_URL: string =
-  'https://res.cloudinary.com/dwnegnadm/raw/upload/v1/adrianmilano/profile.json';
+  'https://res.cloudinary.com/dwnegnadm/raw/upload/adrianmilano/profile.json';

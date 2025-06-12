@@ -3,23 +3,24 @@ import { ProfileCollection } from './app.collection';
 export const DataCollection: ProfileCollection = {
   fullName: 'Adrian Milano',
   shortName: 'Adrian',
-  title: 'I’m Adrian Milano <br /> Senior Frontend Engineer based in Jakarta.',
+  title:
+    'I’m Adrian Milano <br /> Senior Software Engineer <br /> based in Jakarta.',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
-    linkedin:
-      'https://www.linkedin.com/in/adrian-m-ab602a13b/?original_referer=',
+    linkedin: 'https://www.linkedin.com/in/adrian-m-ab602a13b',
   },
   contact: {
     whatsapps: 'https://wa.me/628112175175',
     phone: '08112175175',
   },
   count: {
-    experience: 5,
+    experience: 7,
     projects: 30,
     client: 20,
   },
-  aboutMe: '',
+  aboutMe:
+    '<p>IT professional with 7 years of experience in both frontend and backend development, combining creativity with strong technical expertise. Highly adaptable and collaborative, with a deep passion for continuous learning in the ever-evolving technology landscape.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
@@ -27,26 +28,32 @@ export const DataCollection: ProfileCollection = {
     'Next JS',
     'React JS',
     'Vue JS',
-    'Keystone JS',
     'Karma/Jasmine',
     'Jest',
-    'Node JS',
+    'New Relic',
+    'Kong',
+    'Sentry',
+    'Express JS',
     'Golang',
-    'PHP',
-    'Laravel Framework',
     'Java Spring Boot',
+    'Laravel',
+    'PHP',
     'CSS/SCSS/SASS',
-    'Flutter',
+    'RabbitMQ',
+    'Redis',
   ],
   workflows: [
     'Clean Architecture Code',
     'Test Driven Development',
     'Trunk Development',
-    'Gitlab CI/CD, Jenskin, SonarQube Scanner',
+    'System Monitoring Application',
+    'Micro Frontend Architecture',
+    'Micro Service Architecture',
+    'CI/CD, Jenskin',
+    'Code with SonarQube',
+    'Agile & Scrum Method',
     'Cross Browser Testing & Debugging',
     'Cross Functional Teams',
-    'Agile Development & Scrum Method',
-    'Micro Frontend Architecture',
     'Systems Development Life Cycle',
   ],
   education: [
@@ -56,79 +63,107 @@ export const DataCollection: ProfileCollection = {
       title: 'Bachelor Of Education',
       value: '3.69',
     },
-    {
-      period: '2016 - 2018',
-      location: 'SMK Negeri 10 Jakarta',
-      title: 'High School Software Engineering',
-      value: '8.3',
-    },
   ],
   experience: [
     {
       period: 'June 2023 - Present',
-      location: 'PT. Pakar Digital Global (Paper.Id)',
-      title: 'Senior Frontend Enginner',
-      description:
-        'As a senior frontend web developer specializing in the use of the Angular programming language, I assist in the development of micro-based applications for clients, especially Enterprise Products, using clean architecture methods, trunk-based development and test-based development practices. Apart from that, I use Scrum for project management. Products that focus on finance and invoicing.',
+      location: 'Paper.id (PT Pakar Digital Global)',
+      title: 'Senior Software Enginner',
+      description: [
+        'Refactored and optimized the Financial Service Feature codebase using Clean Architecture and Clean Code principles to improve readability, performance, and maintainability.',
+        'Integrated New Relic Monitoring and created a custom error dashboard for tracking system issues and user activity efficiently.',
+        'Researched Micro Frontend technologies (Single-SPA, FrintJS, Angular Elements) and contributed to frontend modularization discussions.',
+        'Led UI redesign efforts using SCSS and implemented Lazy Load for better modularization and faster load times.',
+        'Contributed to improving Web Vitals on paper.id, and played a key role in the Angular upgrade (v10 to v16) including cleanup of legacy code and removal of unnecessary console.log statements.',
+        'Implemented linter and code review pipelines in paperangularapp, ensuring code quality and blocking non-compliant pull requests.',
+        'Developed unit tests for new components by 90% and provided examples to encourage test-driven development across the team.',
+        'Delivered internal sessions on 3C (Commitlint, Conventional Commit, Commitizen) and served as a speaker on Clean Code & Clean Architecture best practices.',
+      ],
     },
     {
       period: 'February 2022 - June 2023',
-      location: 'PT. Ako Media Asia (SALT)',
+      location: 'SALT.ID (PT Ako Media Asia)',
       title: 'Senior Frontend Developer',
-      description:
-        'As a senior frontend web developer who specializes in using the Angular programming language, I assist in the development of micro-based applications for clients, particularly Telkomsel, utilizing clean architecture methods, trunk-based development, and test-driven development practices. Additionally, I employ Scrum for project management.',
+      description: [
+        'Migrated unit testing framework from Karma/Jasmine to Jest, achieving up to 97% test coverage across key modules.',
+        'Set up SonarQube pipelines for code quality analysis, enforcing minimum coverage thresholds and standard-compliant linting rules through blocking mechanisms.',
+        'Actively collaborated with Project Managers to guide project direction and support team planning and coordination.',
+        'Conducted regular code reviews, providing constructive feedback and ensuring adherence to coding standards.',
+        'Engaged in cross-team discussions with fellow senior engineers to define and enforce best practices in linting, test coverage limits, and the adoption of new technologies such as KeystoneJS.',
+      ],
     },
     {
-      period: 'December 2021 - May 2023',
-      location: 'PT. Media Baru Internasional (MoGawe)',
+      period: 'August 2020 - February 2022',
+      location: 'MoGawe.id (PT Media Baru Internasional)',
       title: 'Tech Manager',
-      description:
-        'As a technology manager, my responsibilities include conducting research to implement the latest technological advancements and leading a team of frontend web developers skilled in Angular, backend developers using Java Spring Boot, and mobile application developers proficient in Flutter. I also oversee server management using the Google Cloud Console and maintain direct coordination with the CEO to ensure efficient company management.',
+      description: [
+        'Lead a cross-functional team of frontend developers (Angular), backend developers (Java Spring Boot), and mobile developers (Flutter).',
+        'Conduct research and implement the latest technological advancements to drive innovation.',
+        'Oversee server infrastructure and cloud management using Google Cloud Console.',
+        'Coordinate directly with the CEO to ensure alignment between technology initiatives and overall company goals.',
+        'Developed robust system designs for clients in the healthcare, finance, and education industries.',
+        'Implemented best practices in system design and integration, improving system performance and reliability by 50%.',
+      ],
     },
     {
-      period: 'August 2020 - December 2021',
-      location: 'PT. Media Baru Internasional (MoGawe)',
-      title: 'Web Developer',
-      description:
-        'As a web frontend developer skilled in Angular, I specialize in developing micro-based applications, including work management and data research applications. I also implement Scrum project management methodologies to ensure the success of my projects.',
-    },
-    {
-      period: 'July 2018 - September 2022',
-      location: 'CV. Inti Multi Solusi',
-      title: 'Fullstack Developer',
-      description:
-        'As a full-stack programmer, I have expertise in using various programming languages and frameworks such as Laravel, CodeIgniter, Android Native, and Node.js. My work involves developing various applications and IT solutions for clients, with a focus on government clients such as the Ministry of Communication and Informatics, the Ministry of Investment, and the Ministry of Social Affairs.',
-    },
-    {
-      period: 'April 2018 - September 2018',
-      location: 'PT. SEVA SOLUSI DIGITAL (Virallo)',
-      title: 'Junior Frontend Developer',
-      description:
-        'As a junior frontend web developer proficient in Angular, my role involves developing web applications to manage investment programs and other applications such as danalaut.id.',
-    },
-    {
-      period: 'April 2017 - August 2017',
-      location: 'PT. Artivisi Intermedia',
-      title: 'Junior Fullstack Developer Intern',
-      description:
-        'I am completing an internship as a requirement for graduation from vocational high school, where I am learning to use Java and Laravel programming languages.',
+      period: 'July 2018 - August 2020',
+      location: 'PT INTI MULTI SOLUSI',
+      title: 'Fullstack Engineer',
+      description: [
+        'Successfully worked with key government agencies, including: Ministry of Communication and Informatics, Ministry of Investment, Ministry of Social Affairs',
+        'Developed various web and mobile applications using Laravel, CodeIgniter, Android Native, and Node.js.',
+        'Delivered IT solutions for a range of clients, with a primary focus on government institutions.',
+        'Assisted in the design and implementation of systems for small to mid-sized business clients.',
+        'Collaborated with junior and senior designers to develop system specifications and documentation.',
+      ],
     },
   ],
   award: [
-    'Sci-Fi Hardware Hackathon',
-    'Sertifikasi Garuda Emas BNSP',
-    'Politeknik LP3I Jakarta Campus',
-    'HackerRank Skills verification test for Angular',
-    'Tutors Backend Developer Using PHP At Secangkir Ilmu',
-    'Tutors AR/VR Using Unity At Secangkir Ilmu',
-    'Establish an educational organization to provide courses to the general public in Indonesia (Secangkir Ilmu)',
-    'Resource persons at the ministry of communication and information related to the Reporting Application',
-    'Resource persons at the ministry of communication and information related to the GIS Application',
-    'Resource persons at the ministry of communication and information related to the Computer Assisted Test',
-    "As a speaker 'How To Start Professional Career as Web Developer' At Klasspro.id",
-    "As a speaker 'Menghadapi Era Society 5.0 dengan Skill Digital' At Secangkir Ilmu",
+    {
+      title: '2022 | How To Start Professional Career',
+      description:
+        'As a speaker `How To Start Professional Career as Web Developer` At Klasspro.id.',
+    },
+    {
+      title: '2022 | Student-centered learning systems',
+      description:
+        'CTO & Co-Founder of Elingway, leading the development of student-centered learning systems.',
+    },
+    {
+      title: '2021 | Menghadapi Era Society 5.0',
+      description:
+        'As a speaker `Menghadapi Era Society 5.0 dengan Skill Digital` At Secangkir Ilmu.',
+    },
+    {
+      title: '2021 | Secangkir Ilmu',
+      description: 'Founder of the Educational Organization Secangkir Ilmu.',
+    },
+    {
+      title: '2021 | Tutors AR/VR',
+      description: 'Tutors AR/VR Using Unity At Secangkir Ilmu.',
+    },
+    {
+      title: '2021 | Tutors Web Developer',
+      description: 'Tutors Web Developer At Secangkir Ilmu.',
+    },
+    {
+      title: '2018 | BNSP Software Engineer',
+      description: 'Officially certified as a Software Engineer.',
+    },
+    {
+      title: '2017 | Robotic Hackathon',
+      description: 'Competed in a hardware and robotics hackathon.',
+    },
   ],
   latestWork: [
+    {
+      title: 'Sognatore UI',
+      description: `A modern Angular component library built with standalone components, 
+      designed for productivity, consistent design, and seamless integration. 
+      Create beautiful, accessible, and performant user interfaces with ease.`,
+      link: 'https://sognatore.my.id',
+      picture: 'assets/images/sognatore-ui.png',
+    },
     {
       title: 'Paper.id',
       description: `Paper.id is a billing and payment platform between businesses

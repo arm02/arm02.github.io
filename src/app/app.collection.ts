@@ -15,7 +15,7 @@ export interface ProfileCollection {
   workflows: string[];
   education: EducationCollection[];
   experience: ExperienceCollection[];
-  award: string[];
+  award: { title: string; description: string }[];
   latestWork: LatestWorkCollection[];
 }
 
@@ -30,7 +30,7 @@ export interface ExperienceCollection {
   period: string;
   location: string;
   title: string;
-  description: string;
+  description: string[];
 }
 
 export interface EducationCollection {

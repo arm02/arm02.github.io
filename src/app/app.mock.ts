@@ -203,6 +203,17 @@ export const DataCollection: ProfileCollection = {
       picture: 'assets/images/crox.png',
     },
     {
+      title: 'MoGawe.id',
+      description: `MoGawe.id is an Indonesian crowdsourcing platform offering 
+      micro-jobs through a mobile app. It allows users—called MoGawers—to earn 
+      daily income by completing simple offline tasks such as product photo-taking, 
+      stock checking, and surveys. Operated by PT Media Baru Internasional, 
+      MoGawe is accessible across 180+ cities in Indonesia and is targeted 
+      toward individuals seeking flexible work, such as students, homemakers, or freelancers.`,
+      link: 'https://mogawe.id/',
+      picture: 'assets/images/mogawe.png',
+    },
+    {
       title: 'MoGawe Business',
       description: `MoGawe Bisnis is a web-based application designed for
         businesspeople to simplify and manage various types of work in

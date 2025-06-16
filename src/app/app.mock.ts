@@ -1,8 +1,8 @@
 import { ProfileCollection } from './app.collection';
 
 export const DataCollection: ProfileCollection = {
-  fullName: 'Adrian Milano',
-  shortName: 'Adrian',
+  fullName: 'Professional Profile',
+  shortName: 'Professional Profile',
   title:
     'Adrian Milano <br /> Senior Software Engineer <br /> Jakarta, Indonesia',
   social: {

@@ -591,6 +591,8 @@ span.arm-department {
 
   .arm-logo-title-mobile {
     display: flex;
+    width: 80%;
+    font-size: 15px;
   }
 
   .arm-workflow-list {

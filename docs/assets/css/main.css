@@ -101,17 +101,18 @@ img {
   top: 0;
   width: 100%;
   z-index: 5;
-  background-color: #fff;
-  padding: 70px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 40px 0;
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: ease;
 }
 
 .arm-header.arm-fixed-header {
   padding: 20px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .arm-header-inner {
@@ -192,7 +193,8 @@ img {
   letter-spacing: 1px;
   font-weight: 500;
   font-size: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .arm-banner section h1 {
@@ -295,15 +297,16 @@ img {
 
 .arm-skills-list li {
   display: inline-block;
-  color: #373737;
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 1px solid #d7d7d7;
-  border-radius: 27px;
+  color: #2c2c2c;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
   margin-right: 8px;
   margin-bottom: 8px;
   font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .arm-workflow-list {
@@ -319,14 +322,15 @@ img {
 
 .arm-workflow-list li {
   display: inline-block;
-  color: #373737;
-  font-size: 16px;
-  padding: 10px 20px;
-  background-color: #fff;
-  border: 1px solid #d7d7d7;
-  border-radius: 27px;
+  color: #2c2c2c;
+  font-size: 14px;
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
   font-weight: 500;
   width: 100%;
+  transition: all 0.2s ease;
 }
 
 .arm-experience-section {
@@ -386,6 +390,7 @@ span.arm-department {
   padding-left: 28px;
   position: relative;
   margin-bottom: 12px;
+  text-align: justify;
 }
 
 .arm-experience-list ul li:before {
@@ -404,13 +409,12 @@ span.arm-department {
 }
 
 .arm-work-list {
-  padding-left: 70px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-right: 70px;
-  background-color: #f6f8fa;
-  margin-bottom: 40px;
-  border-radius: 7px;
+  padding: 50px;
+  background-color: #fafbfc;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  border: 1px solid #f0f3f6;
+  transition: all 0.3s ease;
 }
 
 .arm-work-list section {
@@ -550,14 +554,18 @@ span.arm-department {
 }
 
 .arm-award {
-  padding: 15px;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  background-color: #fafbfc;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid #f0f3f6;
+}
+
+.arm-award > li > p {
   text-align: justify;
-  background-color: #f6f8fa;
-  margin-bottom: 40px;
-  border-radius: 7px;
-  padding: 50px;
 }
 
 .arm-logo-title-web {
@@ -569,10 +577,11 @@ span.arm-department {
 }
 
 .arm-box {
-  background-color: #f6f8fa;
-  margin-bottom: 40px;
-  border-radius: 7px;
-  padding: 50px;
+  background-color: #fafbfc;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 40px;
+  border: 1px solid #f0f3f6;
 }
 
 @media (max-width: 768px) {
@@ -589,21 +598,21 @@ span.arm-department {
     flex-direction: column;
   }
   .arm-box {
-	padding: 25px;
+    padding: 25px;
   }
 
   .arm-officename {
-	font-size: 20px;
+    font-size: 20px;
   }
   .arm-department {
-	font-size: 16px;
+    font-size: 16px;
   }
   .arm-award {
-	padding: 25px;
-	font-size: 14px;
+    padding: 25px;
+    font-size: 14px;
   }
   .arm-about-section {
-	padding: 30px;
+    padding: 30px;
   }
   .arm-header,
   .arm-header.arm-fixed-header {
@@ -645,11 +654,11 @@ span.arm-department {
 
   .arm-numbervalulist li {
     margin-right: 30px;
-	margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 
   .arm-numbervalulist strong {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .arm-numbervalulist span {
@@ -733,6 +742,25 @@ span.arm-department {
   .arm-work-list section {
     padding-right: 0;
     padding-bottom: 30px;
+  }
+
+  /* Reorder latest work layout on mobile - image first, then content */
+  .arm-work-list .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .arm-work-list .row > div:first-child {
+    order: 2;
+  }
+
+  .arm-work-list .row > div:last-child {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .arm-work-list .row > div:last-child figure {
+    margin-bottom: 0;
   }
 }
 

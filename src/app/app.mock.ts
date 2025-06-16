@@ -4,7 +4,7 @@ export const DataCollection: ProfileCollection = {
   fullName: 'Adrian Milano',
   shortName: 'Adrian',
   title:
-    'I’m Adrian Milano <br /> Senior Software Engineer <br /> based in Jakarta.',
+    'Adrian Milano <br /> Senior Software Engineer <br /> Jakarta, Indonesia',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
@@ -20,7 +20,7 @@ export const DataCollection: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>IT professional with 7 years of experience in both frontend and backend development, combining creativity with strong technical expertise. Highly adaptable and collaborative, with a deep passion for continuous learning in the ever-evolving technology landscape.</p>',
+    '<p>Experienced software engineer with 7+ years in full-stack development, specializing in modern web technologies and scalable system architecture. Passionate about clean code principles, continuous learning, and delivering high-quality solutions.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
@@ -43,18 +43,18 @@ export const DataCollection: ProfileCollection = {
     'Redis',
   ],
   workflows: [
-    'Clean Architecture Code',
-    'Test Driven Development',
-    'Trunk Development',
-    'System Monitoring Application',
+    'Clean Architecture & Code',
+    'Test-Driven Development',
+    'Trunk-Based Development',
+    'Application Monitoring',
     'Micro Frontend Architecture',
-    'Micro Service Architecture',
-    'CI/CD, Jenskin',
-    'Code with SonarQube',
-    'Agile & Scrum Method',
-    'Cross Browser Testing & Debugging',
-    'Cross Functional Teams',
-    'Systems Development Life Cycle',
+    'Microservice Architecture',
+    'CI/CD & Jenkins',
+    'Code Quality with SonarQube',
+    'Agile & Scrum Methodologies',
+    'Cross-Browser Testing & Debugging',
+    'Cross-Functional Team Collaboration',
+    'Software Development Life Cycle',
   ],
   education: [
     {
@@ -68,16 +68,16 @@ export const DataCollection: ProfileCollection = {
     {
       period: 'June 2023 - Present',
       location: 'Paper.id (PT Pakar Digital Global)',
-      title: 'Senior Software Enginner',
+      title: 'Senior Software Engineer',
       description: [
-        'Refactored and optimized the Financial Service Feature codebase using Clean Architecture and Clean Code principles to improve readability, performance, and maintainability.',
-        'Integrated New Relic Monitoring and created a custom error dashboard for tracking system issues and user activity efficiently.',
-        'Researched Micro Frontend technologies (Single-SPA, FrintJS, Angular Elements) and contributed to frontend modularization discussions.',
-        'Led UI redesign efforts using SCSS and implemented Lazy Load for better modularization and faster load times.',
-        'Contributed to improving Web Vitals on paper.id, and played a key role in the Angular upgrade (v10 to v16) including cleanup of legacy code and removal of unnecessary console.log statements.',
-        'Implemented linter and code review pipelines in paperangularapp, ensuring code quality and blocking non-compliant pull requests.',
-        'Developed unit tests for new components by 90% and provided examples to encourage test-driven development across the team.',
-        'Delivered internal sessions on 3C (Commitlint, Conventional Commit, Commitizen) and served as a speaker on Clean Code & Clean Architecture best practices.',
+        'Architected and refactored financial service features using Clean Architecture principles, improving code maintainability and system performance.',
+        'Implemented comprehensive monitoring solutions with New Relic, creating custom dashboards for proactive issue tracking and user behavior analysis.',
+        'Led research initiatives on Micro Frontend technologies (Single-SPA, FrintJS, Angular Elements) to drive frontend modularization strategy.',
+        'Spearheaded UI/UX redesign initiatives using SCSS and implemented lazy loading strategies, resulting in significantly improved load times.',
+        'Orchestrated Angular framework migration from v10 to v16, including legacy code cleanup and Web Vitals optimization for enhanced user experience.',
+        'Established robust CI/CD pipelines with automated linting and code review processes, enforcing quality standards through pull request validation.',
+        'Achieved 90% unit test coverage for new components while mentoring team members on test-driven development practices.',
+        'Conducted technical workshops on modern development practices (Commitlint, Conventional Commits, Commitizen) and Clean Architecture principles.',
       ],
     },
     {
@@ -85,11 +85,11 @@ export const DataCollection: ProfileCollection = {
       location: 'SALT.ID (PT Ako Media Asia)',
       title: 'Senior Frontend Developer',
       description: [
-        'Migrated unit testing framework from Karma/Jasmine to Jest, achieving up to 97% test coverage across key modules.',
-        'Set up SonarQube pipelines for code quality analysis, enforcing minimum coverage thresholds and standard-compliant linting rules through blocking mechanisms.',
-        'Actively collaborated with Project Managers to guide project direction and support team planning and coordination.',
-        'Conducted regular code reviews, providing constructive feedback and ensuring adherence to coding standards.',
-        'Engaged in cross-team discussions with fellow senior engineers to define and enforce best practices in linting, test coverage limits, and the adoption of new technologies such as KeystoneJS.',
+        'Successfully migrated testing infrastructure from Karma/Jasmine to Jest, achieving 97% test coverage across critical application modules.',
+        'Implemented automated code quality assurance using SonarQube pipelines with enforced coverage thresholds and compliance validation.',
+        'Collaborated closely with project stakeholders to provide technical guidance and strategic direction for product development initiatives.',
+        'Maintained high code quality standards through systematic peer reviews and mentorship of development best practices.',
+        'Contributed to technical decision-making processes, establishing coding standards and evaluating emerging technologies like KeystoneJS for adoption.',
       ],
     },
     {
@@ -97,12 +97,12 @@ export const DataCollection: ProfileCollection = {
       location: 'MoGawe.id (PT Media Baru Internasional)',
       title: 'Tech Manager',
       description: [
-        'Lead a cross-functional team of frontend developers (Angular), backend developers (Java Spring Boot), and mobile developers (Flutter).',
-        'Conduct research and implement the latest technological advancements to drive innovation.',
-        'Oversee server infrastructure and cloud management using Google Cloud Console.',
-        'Coordinate directly with the CEO to ensure alignment between technology initiatives and overall company goals.',
-        'Developed robust system designs for clients in the healthcare, finance, and education industries.',
-        'Implemented best practices in system design and integration, improving system performance and reliability by 50%.',
+        'Led cross-functional engineering teams including Angular frontend, Java Spring Boot backend, and Flutter mobile developers.',
+        'Drove technology innovation through research and implementation of cutting-edge development practices and tools.',
+        'Managed cloud infrastructure and server operations using Google Cloud Platform, ensuring scalable and reliable system architecture.',
+        'Collaborated directly with executive leadership to align technical strategy with business objectives and growth initiatives.',
+        'Designed and delivered enterprise-grade solutions for clients across healthcare, financial services, and education sectors.',
+        'Implemented system optimization strategies that improved overall performance and reliability by 50%.',
       ],
     },
     {
@@ -110,11 +110,11 @@ export const DataCollection: ProfileCollection = {
       location: 'PT INTI MULTI SOLUSI',
       title: 'Fullstack Engineer',
       description: [
-        'Successfully worked with key government agencies, including: Ministry of Communication and Informatics, Ministry of Investment, Ministry of Social Affairs',
-        'Developed various web and mobile applications using Laravel, CodeIgniter, Android Native, and Node.js.',
-        'Delivered IT solutions for a range of clients, with a primary focus on government institutions.',
-        'Assisted in the design and implementation of systems for small to mid-sized business clients.',
-        'Collaborated with junior and senior designers to develop system specifications and documentation.',
+        'Collaborated with major government agencies including Ministry of Communication and Informatics, Ministry of Investment, and Ministry of Social Affairs.',
+        'Developed comprehensive web and mobile applications using Laravel, CodeIgniter, Android Native, and Node.js technologies.',
+        'Delivered custom IT solutions primarily focused on government sector requirements and compliance standards.',
+        'Contributed to system architecture and implementation for small to medium-sized enterprise clients.',
+        'Worked collaboratively with design teams to create detailed system specifications and technical documentation.',
       ],
     },
   ],
@@ -122,7 +122,7 @@ export const DataCollection: ProfileCollection = {
     {
       title: '2022 | How To Start Professional Career',
       description:
-        'As a speaker `How To Start Professional Career as Web Developer` At Klasspro.id.',
+        'Delivered keynote presentation "How To Start Professional Career as Web Developer" at Klasspro.id professional development event.',
     },
     {
       title: '2022 | Student-centered learning systems',
@@ -132,7 +132,7 @@ export const DataCollection: ProfileCollection = {
     {
       title: '2021 | Menghadapi Era Society 5.0',
       description:
-        'As a speaker `Menghadapi Era Society 5.0 dengan Skill Digital` At Secangkir Ilmu.',
+        'Featured speaker on "Navigating Society 5.0 with Digital Skills" at Secangkir Ilmu educational initiative.',
     },
     {
       title: '2021 | Secangkir Ilmu',
@@ -140,11 +140,11 @@ export const DataCollection: ProfileCollection = {
     },
     {
       title: '2021 | Tutors AR/VR',
-      description: 'Tutors AR/VR Using Unity At Secangkir Ilmu.',
+      description: 'Instructor for AR/VR Development using Unity at Secangkir Ilmu educational platform.',
     },
     {
       title: '2021 | Tutors Web Developer',
-      description: 'Tutors Web Developer At Secangkir Ilmu.',
+      description: 'Web Development Instructor at Secangkir Ilmu educational initiative.',
     },
     {
       title: '2018 | BNSP Software Engineer',

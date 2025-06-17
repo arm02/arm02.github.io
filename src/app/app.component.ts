@@ -25,6 +25,8 @@ export class AppComponent {
   public profile: ProfileCollection = DataCollection;
   isLoading = false;
   isLoadingNumber: number = this.profile.latestWork.length;
+  currentSlide = 0;
+  
   constructor() {}
 
   downloadNewResume() {
@@ -49,5 +51,21 @@ export class AppComponent {
       showConfirmButton: false,
       timer: 1500,
     });
+  }
+
+  nextSlide() {
+    if (this.currentSlide < 11) {
+      this.currentSlide++;
+    }
+  }
+
+  previousSlide() {
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
+    }
+  }
+
+  goToSlide(index: number) {
+    this.currentSlide = index;
   }
 }

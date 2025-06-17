@@ -155,38 +155,63 @@
     <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
       Latest works
     </h2>
-    <div class="arm-work-list-section">
-      <div
-        class="arm-work-list"
-        *ngFor="let latestWork of profile.latestWork; let i = index"
-        id="latestWorkData{{ i }}"
-        #latestWorkData{{i}}
-      >
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <section>
-              <h3 class="arm-work-tilte">{{ latestWork.title }}</h3>
-              <p>
-                {{ latestWork.description }}
-              </p>
-              <a [href]="latestWork.link" class="arm-button" target="_blank"
-                >See Project</a
-              >
-            </section>
-          </div>
-          <div
-            class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex align-items-center"
-          >
-            <figure>
-              <img
-                [src]="latestWork.picture"
-                class="arm-logo-image"
-                loading="lazy"
-                alt="Latest Work"
-              />
-            </figure>
+    <div class="arm-work-slider-container">
+      <div class="arm-work-slider" #workSlider>
+        <div
+          class="arm-work-slide"
+          *ngFor="let latestWork of profile.latestWork; let i = index"
+          [class.active]="i === currentSlide"
+        >
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+              <section class="arm-latestwork-mobile">
+                <h3 class="arm-work-tilte">{{ latestWork.title }}</h3>
+                <p>
+                  {{ latestWork.description }}
+                </p>
+                <a [href]="latestWork.link" class="arm-button" target="_blank"
+                  >See Project</a
+                >
+              </section>
+            </div>
+            <div
+              class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex align-items-center"
+            >
+              <figure>
+                <img
+                  [src]="latestWork.picture"
+                  class="arm-logo-image"
+                  loading="lazy"
+                  alt="Latest Work"
+                />
+              </figure>
+            </div>
           </div>
         </div>
+      </div>
+      <div class="arm-slider-controls">
+        <button 
+          class="arm-slider-btn arm-slider-prev" 
+          (click)="previousSlide()"
+          [disabled]="currentSlide === 0"
+        >
+          <i class="ri-arrow-left-line"></i>
+        </button>
+        <div class="arm-slider-dots">
+          <button
+            *ngFor="let dot of profile.latestWork; let i = index"
+            class="arm-slider-dot"
+            [class.active]="i === currentSlide"
+            (click)="goToSlide(i)"
+          ></button>
+        </div>
+        <button 
+          class="arm-slider-btn arm-slider-next" 
+          (click)="nextSlide()"
+          [disabled]="currentSlide === 11"
+        >
+          <i class="ri-arrow-right-line"></i>
+        </button>
       </div>
     </div>
   </div>

@@ -187,21 +187,34 @@ img {
   padding-right: 70px;
 }
 
+.arm-banner section h1 div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+  display: block;
+}
+
 .arm-banner section h1 span {
   display: block;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 16px;
-  padding-bottom: 20px;
-  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #6c757d;
+  padding-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .arm-banner section h1 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 60px;
-  color: #000;
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .arm-numbervalulist {
@@ -235,27 +248,42 @@ img {
 }
 
 .arm-about-section {
-  padding-block: 60px;
+  padding-bottom: 50px;
 }
 
 .arm-heading {
   display: inline-block;
   font-weight: 700;
-  color: #000;
+  color: #1a1a1a;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 16px;
-  border-bottom: 3px solid #000;
-  padding-bottom: 7px;
-  margin-bottom: 23px;
+  letter-spacing: 2px;
+  font-size: 14px;
+  border-bottom: 3px solid #1a1a1a;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.arm-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: #6c757d;
 }
 
 .arm-about-section p {
-  color: #373737;
-  font-size: 24px;
-  line-height: 40px;
-  font-weight: 300;
-  text-align: justify;
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.arm-about-section p:last-child {
+  margin-bottom: 0;
 }
 
 .arm-button {
@@ -282,7 +310,8 @@ img {
 }
 
 .arm-skills-section {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
 }
 
 .arm-skills-list {
@@ -297,16 +326,17 @@ img {
 
 .arm-skills-list li {
   display: inline-block;
-  color: #2c2c2c;
+  color: #ffffff;
   font-size: 14px;
-  padding: 8px 16px;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 20px;
-  margin-right: 8px;
-  margin-bottom: 8px;
-  font-weight: 500;
-  transition: all 0.2s ease;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #343a40 100%);
+  border: none;
+  border-radius: 25px;
+  margin-right: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .arm-workflow-list {
@@ -322,19 +352,24 @@ img {
 
 .arm-workflow-list li {
   display: inline-block;
-  color: #2c2c2c;
+  color: #2c3e50;
   font-size: 14px;
-  padding: 8px 16px;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 20px;
+  padding: 16px 20px;
+  background-color: #ffffff;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
   font-weight: 500;
   width: 100%;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .arm-experience-section {
-  padding-bottom: 10px;
+  padding: 50px 0;
+}
+
+.arm-experience-section:nth-child(even) {
+  background: #f8f9fa;
 }
 
 .arm-experience-list section {
@@ -346,9 +381,11 @@ img {
 }
 
 .arm-officename {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+  line-height: 1.3;
 }
 
 .arm-experience-list span {
@@ -356,17 +393,20 @@ img {
 }
 
 span.arm-year {
-  color: #373737;
+  color: #1a1a1a;
   font-size: 14px;
-  font-weight: 400;
-  padding-bottom: 10px;
+  font-weight: 600;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 span.arm-department {
-  color: #373737;
-  font-weight: 400;
-  font-size: 18px;
-  padding-bottom: 15px;
+  color: #6c757d;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 16px;
+  line-height: 1.4;
 }
 
 .arm-experience-list p {
@@ -384,37 +424,46 @@ span.arm-department {
 }
 
 .arm-experience-list ul li {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
   padding-left: 28px;
   position: relative;
-  margin-bottom: 12px;
-  text-align: justify;
+  margin-bottom: 8px;
+  text-align: left;
+  color: #2c3e50;
 }
 
 .arm-experience-list ul li:before {
   content: "";
   position: absolute;
   left: 0;
-  top: 10px;
+  top: 12px;
   border-radius: 100%;
-  width: 8px;
-  height: 8px;
-  background-color: #373737;
+  width: 6px;
+  height: 6px;
+  background-color: #1a1a1a;
 }
 
 .arm-work-section {
-  padding-bottom: 80px;
+  padding: 50px 0;
+  background: #f8f9fa;
 }
 
 .arm-work-list {
-  padding: 50px;
-  background-color: #fafbfc;
+  padding: 40px;
+  background-color: #ffffff;
   margin-bottom: 30px;
-  border-radius: 12px;
-  border: 1px solid #f0f3f6;
+  border-radius: 16px;
+  border: 1px solid #e9ecef;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.arm-work-list:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
+  border-color: #1a1a1a;
 }
 
 .arm-work-list section {
@@ -423,18 +472,20 @@ span.arm-department {
 }
 
 .arm-work-tilte {
-  color: #000;
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 600;
-  margin-bottom: 30px;
+  color: #1a1a1a;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .arm-work-list p {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #2c3e50;
+  margin-bottom: 24px;
 }
 
 .arm-work-list .arm-button {
@@ -554,14 +605,21 @@ span.arm-department {
 }
 
 .arm-award {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 500;
   text-align: left;
-  background-color: #fafbfc;
-  margin-bottom: 30px;
+  background-color: #ffffff;
+  margin-block: 20px;
   border-radius: 12px;
-  padding: 40px;
-  border: 1px solid #f0f3f6;
+  padding: 32px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.arm-award:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .arm-award > li > p {
@@ -577,11 +635,18 @@ span.arm-department {
 }
 
 .arm-box {
-  background-color: #fafbfc;
-  margin-bottom: 30px;
+  background-color: #ffffff;
+  margin-bottom: 24px;
   border-radius: 12px;
-  padding: 40px;
-  border: 1px solid #f0f3f6;
+  padding: 32px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.arm-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -614,7 +679,13 @@ span.arm-department {
     font-size: 14px;
   }
   .arm-about-section {
-    padding: 30px;
+    padding-inline: 0px;
+    padding-bottom: 30px;
+  }
+  
+  .arm-about-section p {
+    font-size: 16px;
+    line-height: 28px;
   }
   .arm-header,
   .arm-header.arm-fixed-header {
@@ -639,6 +710,17 @@ span.arm-department {
     padding-left: 0;
     padding-right: 0;
   }
+  
+  .arm-banner section h1 div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    font-size: 25px;
+  }
+
+  .arm-experience-list ul li {
+    text-align: justify;
+  }
 
   .arm-banner section h1 span {
     padding-bottom: 0;
@@ -646,8 +728,10 @@ span.arm-department {
 
   .arm-banner section h1,
   .arm-work-det-title {
-    font-size: 25px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 38px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .arm-numbervalulist {
@@ -673,6 +757,7 @@ span.arm-department {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 30px;
+    text-align: justify;
   }
 
   .arm-skills-list li {
@@ -683,7 +768,7 @@ span.arm-department {
 
   .arm-skills-section .col-12,
   .arm-experience-list .col-12 {
-    margin-bottom: 40px;
+    margin-block: 40px;
   }
 
   .arm-skills-section,
@@ -769,6 +854,35 @@ span.arm-department {
 @media (min-width: 768px) and (max-width: 991px) {
   .arm-work-list section {
     padding-right: 30px;
+  }
+  
+  .arm-banner section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .arm-banner section h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  
+  .arm-banner section h1 div {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+}
+
+/* Specific fix for 915x679 and similar dimensions */
+@media (min-width: 900px) and (max-width: 1024px) {
+  .arm-banner section h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  
+  .arm-banner section {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

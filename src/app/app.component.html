@@ -42,7 +42,7 @@
       <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
         <section class="animate-slide-right">
           <h1 class="animate-typing">
-            <span class="animate-bounce">HI THERE</span>
+            <span class="animate-bounce">HELLO</span>
             <div [innerHTML]="profile.title"></div>
           </h1>
           <ul class="arm-numbervalulist animate-stagger">
@@ -67,7 +67,7 @@
 <div class="arm-about-section animate-fade-in-up" id="aboutData" #aboutData>
   <div class="container">
     <section>
-      <h2 class="arm-heading">PROFESSIONAL SUMMARY</h2>
+      <h2 class="arm-heading">ABOUT ME</h2>
       <div [innerHTML]="profile.aboutMe"></div>
     </section>
   </div>
@@ -75,7 +75,7 @@
 
 <div class="arm-experience-section animate-fade-in-up" id="experienceData" #experienceData>
   <div class="container">
-    <h2 class="arm-heading">Work Experience</h2>
+    <h2 class="arm-heading">PROFESSIONAL EXPERIENCE</h2>
     <div class="row arm-experience-list">
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 animate-slide-in-left"
@@ -96,10 +96,10 @@
 
 <div class="arm-experience-section animate-fade-in-up" id="educationData" #educationData>
   <div class="container">
-    <h2 class="arm-heading">Education</h2>
+    <h2 class="arm-heading">EDUCATION</h2>
     <div class="row arm-experience-list">
       <div
-        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 arm-box animate-slide-in-right"
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 arm-box animate-slide-in-right"
         *ngFor="let education of profile.education"
       >
         <section>
@@ -117,7 +117,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <h2 class="arm-heading">Awards & Certifications</h2>
+        <h2 class="arm-heading">ACHIEVEMENTS & CERTIFICATIONS</h2>
         <ul class="arm-award">
           <li *ngFor="let award of profile.award">
             <strong>{{ award.title }}</strong> <br />
@@ -133,13 +133,13 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <h2 class="arm-heading">Core Skills</h2>
+        <h2 class="arm-heading">TECHNICAL SKILLS</h2>
         <ul class="arm-skills-list animate-stagger">
           <li *ngFor="let skills of profile.coreSkills">{{ skills }}</li>
         </ul>
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <h2 class="arm-heading">Workflow</h2>
+        <h2 class="arm-heading">METHODOLOGIES</h2>
         <ul class="arm-workflow-list animate-stagger">
           <li *ngFor="let workflow of profile.workflows">
             {{ workflow }}
@@ -153,7 +153,7 @@
 <div class="arm-work-section animate-fade-in-up">
   <div class="container">
     <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
-      Latest works
+      FEATURED PROJECTS
     </h2>
     <div class="arm-work-slider-container">
       <div class="arm-work-slider" #workSlider>

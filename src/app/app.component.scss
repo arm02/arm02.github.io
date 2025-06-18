@@ -6,6 +6,7 @@
 // Prevent layout shift during animations
 .arm-banner {
   min-height: 400px; // Reserve space to prevent layout shift
+  margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
@@ -243,7 +244,6 @@ body {
     &:hover {
       transform: translateY(-5px);
       transition: transform 0.3s ease;
-      color: #007bff;
     }
   }
 }
@@ -263,7 +263,6 @@ body {
     
     &:hover {
       transform: translateY(-3px);
-      color: #007bff;
     }
   }
 }

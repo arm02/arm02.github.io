@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { ProfileCollection } from './app.collection';
@@ -21,13 +21,20 @@ import { concatMap, from } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
   public profile: ProfileCollection = DataCollection;
   isLoading = false;
   isLoadingNumber: number = this.profile.latestWork.length;
   currentSlide = 0;
   
   constructor() {}
+
+  ngAfterViewInit() {
+    // Ensure page starts at top after component loads
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  }
 
   downloadNewResume() {
     window.open(this.profile.resumeLink, '_blank');

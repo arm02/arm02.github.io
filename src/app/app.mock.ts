@@ -8,7 +8,7 @@ export const DataCollection: ProfileCollection = {
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
-    linkedin: 'https://www.linkedin.com/in/adrian-m-ab602a13b',
+    linkedin: 'https://www.linkedin.com/in/arm02',
   },
   contact: {
     whatsapps: 'https://wa.me/628112175175',
@@ -20,7 +20,7 @@ export const DataCollection: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>Experienced software engineer with 7+ years in full-stack development, specializing in modern web technologies and scalable system architecture. Passionate about clean code principles, continuous learning, and delivering high-quality solutions.</p>',
+    '<p>Senior Full-Stack Software Engineer with 7+ years designing and building distributed systems for fintech and SaaS. Strong expertise in Go, Node.js/Express, TypeScript, and modern Angular. Proven impact improving performance (page load −50%, bundle size -40%), system reliability, and developer velocity through microservices, automated testing, and CI/CD. Experienced driving architecture decisions, API design, and delivery strategy across full-stack initiatives.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
@@ -70,14 +70,32 @@ export const DataCollection: ProfileCollection = {
       location: 'Paper.id (PT Pakar Digital Global)',
       title: 'Senior Software Engineer',
       description: [
-        'Architected and refactored financial service features using Clean Architecture principles, improving code maintainability and system performance.',
-        'Implemented comprehensive monitoring solutions with New Relic, creating custom dashboards for proactive issue tracking and user behavior analysis.',
-        'Led research initiatives on Micro Frontend technologies (Single-SPA, FrintJS, Angular Elements) to drive frontend modularization strategy.',
-        'Spearheaded UI/UX redesign initiatives using SCSS and implemented lazy loading strategies, resulting in significantly improved load times.',
-        'Orchestrated Angular framework migration from v10 to v16, including legacy code cleanup and Web Vitals optimization for enhanced user experience.',
-        'Established robust CI/CD pipelines with automated linting and code review processes, enforcing quality standards through pull request validation.',
-        'Achieved 90% unit test coverage for new components while mentoring team members on test-driven development practices.',
-        'Conducted technical workshops on modern development practices (Commitlint, Conventional Commits, Commitizen) and Clean Architecture principles.',
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Modernized core fintech modules using Clean Architecture and improved code modularity for long-termcalability',
+            'Migrated Angular v10 → v16 improving page load speed 30–50% and reducing bundle size 40%',
+            'Designed and developed full-stack finance workflows in Go + Angular (automated withdrawals, secure BIN key storage, invoice processing improvements)',
+            'Developed financial services and enterprise-grade product features, and built internal tooling that improved operational efficiency and accounting workflow accuracy.',
+            'Implemented lazy loading and UI optimizations to significantly improve page load time',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Mentored 3–4 engineers in frontend practices, testing strategy, and modular design',
+            'Improved FE–BE alignment by driving shared API contract guidelines with backend & product teams',
+          ],
+        },
+        {
+          title: 'Quality & Operational Excellence',
+          items: [
+            'Improved test coverage to 90%+ for new modules, enabling weekly production releases with lower regression risk',
+            'Implemented New Relic monitoring dashboards reducing issue diagnosis time and improving reliability',
+            'Designed Micro Frontend strategy to enable modular and scalable product development',
+            'Established CI/CD pipelines with linting, pull request validation, and automated quality checks',
+          ],
+        },
       ],
     },
     {
@@ -85,24 +103,76 @@ export const DataCollection: ProfileCollection = {
       location: 'SALT.ID (PT Ako Media Asia)',
       title: 'Senior Frontend Developer',
       description: [
-        'Successfully migrated testing infrastructure from Karma/Jasmine to Jest, achieving 97% test coverage across critical application modules.',
-        'Implemented automated code quality assurance using SonarQube pipelines with enforced coverage thresholds and compliance validation.',
-        'Collaborated closely with project stakeholders to provide technical guidance and strategic direction for product development initiatives.',
-        'Maintained high code quality standards through systematic peer reviews and mentorship of development best practices.',
-        'Contributed to technical decision-making processes, establishing coding standards and evaluating emerging technologies like KeystoneJS for adoption.',
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Led development of Angular-based customer and partner platforms serving enterprise clients (Telkomsel)',
+            'Architected modular component structure and caching flows that improved performance & availability',
+            'Migrated testing infrastructure from Karma/Jasmine to Jest, achieving 98%+ test coverage',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Led ~10 engineers in cross-functional development squads, coordinating between FE, BE, QA, and Product',
+            'Supported roadmap delivery by reviewing technical design decisions aligned with business goals',
+          ],
+        },
+        {
+          title: 'Quality & Operational Excellence',
+          items: [
+            'Improved development workflow effectiveness through build and tooling optimizations',
+            'Enhanced release reliability by strengthening testing and error prevention practices',
+          ],
+        },
       ],
     },
     {
-      period: 'August 2020 - February 2022',
+      period: 'January 2021 - February 2022',
       location: 'MoGawe.id (PT Media Baru Internasional)',
       title: 'Tech Manager',
       description: [
-        'Led cross-functional engineering teams including Angular frontend, Java Spring Boot backend, and Flutter mobile developers.',
-        'Drove technology innovation through research and implementation of cutting-edge development practices and tools.',
-        'Managed cloud infrastructure and server operations using Google Cloud Platform, ensuring scalable and reliable system architecture.',
-        'Collaborated directly with executive leadership to align technical strategy with business objectives and growth initiatives.',
-        'Designed and delivered enterprise-grade solutions for clients across healthcare, financial services, and education sectors.',
-        'Implemented system optimization strategies that improved overall performance and reliability by 50%.',
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Guided product development across Angular, Spring Boot, and Flutter applications',
+            'Owned feature planning and technical execution across web and mobile teams',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Provided technical direction and supported decision-making for engineering squads',
+            'Worked with stakeholders & leadership to align roadmap with business needs',
+          ],
+        },
+        {
+          title: 'Quality & Operational Excellence',
+          items: [
+            'Introduced quality checks & improved testing practices to enhance release reliability',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'August 2020 - January 2021',
+      location: 'MoGawe.id (PT Media Baru Internasional)',
+      title: 'Web Developer',
+      description: [
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Developed Angular-based web applications for internal operational tools and core product modules',
+            'Improved UI workflows to increase user productivity and streamline delivery operations',
+            'Implemented system optimization strategies that improved overall performance and reliability by 50%',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Coordinated closely with backend and product teams to accelerate feature shipping',
+          ],
+        },
       ],
     },
     {
@@ -110,11 +180,26 @@ export const DataCollection: ProfileCollection = {
       location: 'PT INTI MULTI SOLUSI',
       title: 'Fullstack Engineer',
       description: [
-        'Collaborated with major government agencies including Ministry of Communication and Informatics, Ministry of Investment, and Ministry of Social Affairs.',
-        'Developed comprehensive web and mobile applications using Laravel, CodeIgniter, Android Native, and Node.js technologies.',
-        'Delivered custom IT solutions primarily focused on government sector requirements and compliance standards.',
-        'Contributed to system architecture and implementation for small to medium-sized enterprise clients.',
-        'Worked collaboratively with design teams to create detailed system specifications and technical documentation.',
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Developed secure government web platforms using Laravel, Node.js, Android Native, PHP (Native & Codeigniter)',
+            'Implemented backend features and database design aligned with compliance requirements',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Coordinated with government stakeholders to ensure accurate requirement delivery',
+            'Collaborated with UI/UX teams for usability improvements in public-facing systems',
+          ],
+        },
+        {
+          title: 'Quality & Operational Excellence',
+          items: [
+            'Improved platform scalability and maintainability through standardized development practices',
+          ],
+        },
       ],
     },
   ],
@@ -140,11 +225,13 @@ export const DataCollection: ProfileCollection = {
     },
     {
       title: '2021 | Tutors AR/VR',
-      description: 'Instructor for AR/VR Development using Unity at Secangkir Ilmu educational platform.',
+      description:
+        'Instructor for AR/VR Development using Unity at Secangkir Ilmu educational platform.',
     },
     {
       title: '2021 | Tutors Web Developer',
-      description: 'Web Development Instructor at Secangkir Ilmu educational initiative.',
+      description:
+        'Web Development Instructor at Secangkir Ilmu educational initiative.',
     },
     {
       title: '2018 | BNSP Software Engineer',
@@ -158,8 +245,8 @@ export const DataCollection: ProfileCollection = {
   latestWork: [
     {
       title: 'Sognatore UI',
-      description: `A modern Angular component library built with standalone components, 
-      designed for productivity, consistent design, and seamless integration. 
+      description: `A modern Angular component library built with standalone components,
+      designed for productivity, consistent design, and seamless integration.
       Create beautiful, accessible, and performant user interfaces with ease.`,
       link: 'https://sognatore.my.id',
       picture: 'assets/images/sognatore-ui.png',
@@ -204,11 +291,11 @@ export const DataCollection: ProfileCollection = {
     },
     {
       title: 'MoGawe.id',
-      description: `MoGawe.id is an Indonesian crowdsourcing platform offering 
-      micro-jobs through a mobile app. It allows users—called MoGawers—to earn 
-      daily income by completing simple offline tasks such as product photo-taking, 
-      stock checking, and surveys. Operated by PT Media Baru Internasional, 
-      MoGawe is accessible across 180+ cities in Indonesia and is targeted 
+      description: `MoGawe.id is an Indonesian crowdsourcing platform offering
+      micro-jobs through a mobile app. It allows users—called MoGawers—to earn
+      daily income by completing simple offline tasks such as product photo-taking,
+      stock checking, and surveys. Operated by PT Media Baru Internasional,
+      MoGawe is accessible across 180+ cities in Indonesia and is targeted
       toward individuals seeking flexible work, such as students, homemakers, or freelancers.`,
       link: 'https://mogawe.id/',
       picture: 'assets/images/mogawe.png',

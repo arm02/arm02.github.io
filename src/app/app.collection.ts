@@ -30,7 +30,7 @@ export interface ExperienceCollection {
   period: string;
   location: string;
   title: string;
-  description: string[];
+  description: any;
 }
 
 export interface EducationCollection {

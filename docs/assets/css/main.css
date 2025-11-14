@@ -278,7 +278,7 @@ img {
   font-size: 18px;
   line-height: 32px;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 24px;
 }
 
@@ -682,7 +682,7 @@ span.arm-department {
     padding-inline: 0px;
     padding-bottom: 30px;
   }
-  
+
   .arm-about-section p {
     font-size: 16px;
     line-height: 28px;
@@ -710,7 +710,7 @@ span.arm-department {
     padding-left: 0;
     padding-right: 0;
   }
-  
+
   .arm-banner section h1 div {
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -766,10 +766,10 @@ span.arm-department {
     font-size: 14px;
   }
 
-  .arm-skills-section .col-12,
+  /* .arm-skills-section .col-12,
   .arm-experience-list .col-12 {
     margin-block: 40px;
-  }
+  } */
 
   .arm-skills-section,
   .arm-work-section,
@@ -849,23 +849,27 @@ span.arm-department {
   .arm-work-list .row > div:last-child figure {
     margin-bottom: 0;
   }
+
+  .arm-banner {
+    margin-bottom: 10px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .arm-work-list section {
     padding-right: 30px;
   }
-  
+
   .arm-banner section {
     padding-left: 30px;
     padding-right: 30px;
   }
-  
+
   .arm-banner section h1 {
     font-size: 36px;
     line-height: 46px;
   }
-  
+
   .arm-banner section h1 div {
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -879,7 +883,7 @@ span.arm-department {
     font-size: 32px;
     line-height: 42px;
   }
-  
+
   .arm-banner section {
     padding-left: 20px;
     padding-right: 20px;
@@ -962,4 +966,12 @@ span.arm-department {
   40% {
     bottom: 0px;
   }
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }

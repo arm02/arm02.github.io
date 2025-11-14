@@ -65,7 +65,7 @@
   #experienceData
 >
   <div class="container">
-    <h2 class="arm-heading">PROFESSIONAL EXPERIENCE</h2>
+    <h2 class="arm-heading">EXPERIENCE</h2>
     <div class="row arm-experience-list">
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 animate-slide-in-left"
@@ -80,12 +80,66 @@
               {{ item.title }}
               <ul>
                 <li *ngFor="let item of item.items">
-                  {{ item }}
+                  <div [innerHTML]="item"></div>
                 </li>
               </ul>
             </li>
           </ul>
         </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="arm-skills-section animate-fade-in-up" id="skillsData" #skillsData>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <h2 class="arm-heading mt-30">CORE EXPERTISE</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.coreSkills">{{ skills }}</li>
+        </ul>
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
+      >
+        <h2 class="arm-heading">FRONTEND</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.frontendSkills">{{ skills }}</li>
+        </ul>
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
+      >
+        <h2 class="arm-heading">BACKEND & INFRASTRUCTURE</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.backendSkills">{{ skills }}</li>
+        </ul>
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
+      >
+        <h2 class="arm-heading">Quality & Automation</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.qualitySkills">{{ skills }}</li>
+        </ul>
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
+      >
+        <h2 class="arm-heading">Monitoring & Operations</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.monitoringSkills">{{ skills }}</li>
+        </ul>
+      </div>
+      <div
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
+      >
+        <h2 class="arm-heading">Database</h2>
+        <ul class="arm-skills-list animate-stagger">
+          <li *ngFor="let skills of profile.databaseSkills">{{ skills }}</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -118,32 +172,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <h2 class="arm-heading">ACHIEVEMENTS & CERTIFICATIONS</h2>
+        <h2 class="arm-heading mt-30">ACHIEVEMENTS & CERTIFICATIONS</h2>
         <ul class="arm-award">
           <li *ngFor="let award of profile.award">
             <strong>{{ award.title }}</strong> <br />
             <p>{{ award.description }}</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="arm-skills-section animate-fade-in-up" id="skillsData" #skillsData>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <h2 class="arm-heading">TECHNICAL SKILLS</h2>
-        <ul class="arm-skills-list animate-stagger">
-          <li *ngFor="let skills of profile.coreSkills">{{ skills }}</li>
-        </ul>
-      </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-        <h2 class="arm-heading">METHODOLOGIES</h2>
-        <ul class="arm-workflow-list animate-stagger">
-          <li *ngFor="let workflow of profile.workflows">
-            {{ workflow }}
           </li>
         </ul>
       </div>

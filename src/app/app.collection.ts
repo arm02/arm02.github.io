@@ -12,6 +12,11 @@ export interface ProfileCollection {
   aboutMe: string;
   resumeLink: string;
   coreSkills: string[];
+  frontendSkills: string[];
+  backendSkills: string[];
+  qualitySkills: string[];
+  monitoringSkills: string[];
+  databaseSkills: string[];
   workflows: string[];
   education: EducationCollection[];
   experience: ExperienceCollection[];

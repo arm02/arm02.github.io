@@ -20,27 +20,54 @@ export const DataCollection: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>Senior Full-Stack Software Engineer with 7+ years designing and building distributed systems for fintech and SaaS. Strong expertise in Go, Node.js/Express, TypeScript, and modern Angular. Proven impact improving performance (page load −50%, bundle size -40%), system reliability, and developer velocity through microservices, automated testing, and CI/CD. Experienced driving architecture decisions, API design, and delivery strategy across full-stack initiatives.</p>',
+    '<p>Senior Full-Stack Software Engineer with <strong>7+ years</strong> of experience designing and building distributed systems across fintech, SaaS, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices</strong>, automated testing, and CI/CD. Experienced in <strong>architectural design</strong>, API development, and end-to-end delivery of scalable web applications.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
+    'Full-Stack Development (Go, Node.js/Express, TypeScript)',
+    'Microservices Architecture',
+    'API Design',
+    'Performance Optimization',
+    'Clean Architecture',
+  ],
+  frontendSkills: [
     'Angular',
-    'Next JS',
-    'React JS',
-    'Vue JS',
-    'Karma/Jasmine',
-    'Jest',
-    'New Relic',
-    'Kong',
-    'Sentry',
-    'Express JS',
-    'Golang',
-    'Java Spring Boot',
-    'Laravel',
-    'PHP',
-    'CSS/SCSS/SASS',
-    'RabbitMQ',
+    'React',
+    'Vue',
+    'Next.js',
+    'HTML & CSS',
+    'Module Federation',
+    'State Management (NgRx/Redux/Pinia/RxJS/Signal,Hooks)',
+    'Web Vitals',
+    'TailwindCSS',
+  ],
+  backendSkills: [
+    'RESTful & Event-Driven Services',
     'Redis',
+    'RabbitMQ',
+    'Docker',
+    'API Gateway (Kong)',
+    'Cloud (GCP / AWS)',
+  ],
+  qualitySkills: [
+    'Jest',
+    'SonarQube',
+    'Automated Testing Pipelines',
+    'Trunk-Based Development',
+    'CI/CD (GitHub Actions, GitLab, Jenkins)',
+  ],
+  monitoringSkills: [
+    'New Relic',
+    'Sentry',
+    'Real User Monitoring (RUM)',
+    'Performance Dashboards',
+  ],
+  databaseSkills: [
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'ArangoDB',
+    'Firebase (Realtime & Firestore)',
   ],
   workflows: [
     'Clean Architecture & Code',
@@ -63,141 +90,147 @@ export const DataCollection: ProfileCollection = {
       title: 'Bachelor Of Education',
       value: '3.69',
     },
+    {
+      period: '2015 - 2018',
+      location: 'SMKN 10 Jakarta',
+      title: 'Bachelor of Engineering',
+      value: '3.5',
+    },
   ],
   experience: [
     {
-      period: 'June 2023 - Present',
-      location: 'Paper.id (PT Pakar Digital Global)',
+      period: 'June 2023 - October 2025',
+      location: 'PT Pakar Digital Global (Paper.id) - Jakarta, Indonesia',
       title: 'Senior Software Engineer',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Modernized core fintech modules using Clean Architecture and improved code modularity for long-termcalability',
-            'Migrated Angular v10 → v16 improving page load speed 30–50% and reducing bundle size 40%',
-            'Designed and developed full-stack finance workflows in Go + Angular (automated withdrawals, secure BIN key storage, invoice processing improvements)',
-            'Developed financial services and enterprise-grade product features, and built internal tooling that improved operational efficiency and accounting workflow accuracy.',
-            'Implemented lazy loading and UI optimizations to significantly improve page load time',
+            '<strong>Implemented and modernized core fintech modules</strong> using Clean Architecture to improve scalability and maintainability',
+            '<strong>Migrated Angular v10→v16</strong>, boosting page load speed <strong>30–50%</strong> and reducing bundle size <strong>40%</strong>.',
+            'Developed <strong>full-stack financial workflows</strong> (Go + Angular) including automated withdrawals, secure BIN key storage, and invoice automation.',
+            'Developed <strong>financial services (Paper Card)</strong> and <strong>enterprise-gradesolutions for clients including JAPFA, Plataran, Kopi Kenangan, Qoala, JnT Cargo, and CSA product features</strong>, and built internal tooling that improved operational efficiency and accounting workflow accuracy.',
+            'Optimized frontend performance with <strong>lazy loading</strong> and <strong>modular design practices</strong>.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Mentored 3–4 engineers in frontend practices, testing strategy, and modular design',
-            'Improved FE–BE alignment by driving shared API contract guidelines with backend & product teams',
+            'Mentored <strong>3–4 engineers</strong> in frontend practices, testing strategy, and modular design',
+            'Improved FE–BE alignment by driving shared <strong>API contract</strong> guidelines with backend & product teams',
           ],
         },
         {
           title: 'Quality & Operational Excellence',
           items: [
-            'Improved test coverage to 90%+ for new modules, enabling weekly production releases with lower regression risk',
-            'Implemented New Relic monitoring dashboards reducing issue diagnosis time and improving reliability',
-            'Designed Micro Frontend strategy to enable modular and scalable product development',
-            'Established CI/CD pipelines with linting, pull request validation, and automated quality checks',
+            'Improved test coverage to <strong>90%+</strong> and established <strong>CI/CD pipelines</strong> (linting, pull request validation, automation quality check), enabling weekly production releases.',
+            'Implemented <strong>New Relic monitoring</strong> for faster issue diagnosis and reliability tracking',
+            '<strong>Designed Micro Frontend strategy</strong> to support scalable and independent product development',
           ],
         },
       ],
     },
     {
       period: 'February 2022 - June 2023',
-      location: 'SALT.ID (PT Ako Media Asia)',
+      location: 'PT Ako Media Asia (SALT.ID) - Jakarta, Indonesia',
       title: 'Senior Frontend Developer',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Led development of Angular-based customer and partner platforms serving enterprise clients (Telkomsel)',
-            'Architected modular component structure and caching flows that improved performance & availability',
-            'Migrated testing infrastructure from Karma/Jasmine to Jest, achieving 98%+ test coverage',
+            '<strong>Developed Angular-based customer and partner platforms</strong> serving enterprise clients such as <strong>Telkomsel (CROX & TSurvey)</strong>.',
+            'Architected <strong>modular component structure</strong> and <strong>caching flows</strong> that improved <strong>performance & availability</strong>.',
+            'Migrated testing infrastructure from Karma/Jasmine to Jest, achieving <strong>98%+</strong> test coverage.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Led ~10 engineers in cross-functional development squads, coordinating between FE, BE, QA, and Product',
-            'Supported roadmap delivery by reviewing technical design decisions aligned with business goals',
+            'Led <strong>~10 engineers</strong> in cross-functional development squads, coordinating between FE, BE, QA, and Product.',
+            'Supported roadmap delivery by <strong>reviewing technical design</strong> decisions aligned with business goals.',
           ],
         },
         {
           title: 'Quality & Operational Excellence',
           items: [
-            'Improved development workflow effectiveness through build and tooling optimizations',
-            'Enhanced release reliability by strengthening testing and error prevention practices',
+            'Improved <strong>development workflow effectiveness</strong> through build and tooling optimizations.',
+            'Enhanced release reliability by <strong>strengthening</strong> testing and <string>error prevention practices</string>.',
+            '<strong>Reduced SonarQube</strong> code smells, bugs, and security vulnerabilities by <strong>40–50%</strong> through close team collaboration and targeted refactoring efforts, resulting in higher code quality and system reliability.',
           ],
         },
       ],
     },
     {
       period: 'January 2021 - February 2022',
-      location: 'MoGawe.id (PT Media Baru Internasional)',
+      location: 'PT Media Baru Internasional (MoGawe.id) - Jakarta, Indonesia',
       title: 'Tech Manager',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Guided product development across Angular, Spring Boot, and Flutter applications',
-            'Owned feature planning and technical execution across web and mobile teams',
+            'Guided product development across <strong>Angular, Spring Boot, and Flutter</strong> applications',
+            'Owned feature <strong>planning</strong> and <strong>technical execution</strong> across web and mobile teams.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Provided technical direction and supported decision-making for engineering squads',
-            'Worked with stakeholders & leadership to align roadmap with business needs',
+            '<strong>Provided</strong> technical direction and supported decision-making for engineering squads.',
+            'Worked with stakeholders & leadership to <strong>align roadmap</strong> with business needs.',
           ],
         },
         {
           title: 'Quality & Operational Excellence',
           items: [
-            'Introduced quality checks & improved testing practices to enhance release reliability',
+            '<strong>Introduced</strong> quality checks & improved testing practices to enhance release reliability.',
           ],
         },
       ],
     },
     {
       period: 'August 2020 - January 2021',
-      location: 'MoGawe.id (PT Media Baru Internasional)',
+      location: 'PT Media Baru Internasional (MoGawe.id) - Jakarta, Indonesia',
       title: 'Web Developer',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Developed Angular-based web applications for internal operational tools and core product modules',
-            'Improved UI workflows to increase user productivity and streamline delivery operations',
-            'Implemented system optimization strategies that improved overall performance and reliability by 50%',
+            'Developed <strong>Angular-based web applications</strong> for internal operational tools and core product modules.',
+            'Improved UI workflows to increase <strong>user productivity</strong> and <strong>streamline delivery operations</strong>.',
+            'Implemented system optimization strategies that improved overall performance and reliability by <strong>50%</strong>.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Coordinated closely with backend and product teams to accelerate feature shipping',
+            '<strong>Coordinated</strong> closely with backend and product teams to accelerate feature shipping.',
           ],
         },
       ],
     },
     {
       period: 'July 2018 - August 2020',
-      location: 'PT INTI MULTI SOLUSI',
+      location: 'CV INTI MULTI SOLUSI - Jakarta, Indonesia',
       title: 'Fullstack Engineer',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Developed secure government web platforms using Laravel, Node.js, Android Native, PHP (Native & Codeigniter)',
-            'Implemented backend features and database design aligned with compliance requirements',
+            'Developed secure government web platforms using <strong>Laravel, Node.js, Android Native, PHP</strong>.',
+            '<strong>Implemented</strong> backend features and database design aligned with compliance requirements.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Coordinated with government stakeholders to ensure accurate requirement delivery',
-            'Collaborated with UI/UX teams for usability improvements in public-facing systems',
+            'Coordinated with government stakeholders to ensure <strong>accurate</strong> requirement delivery.',
+            '<strong>Collaborated</strong> with UI/UX teams for usability improvements in public-facing systems.',
           ],
         },
         {
           title: 'Quality & Operational Excellence',
           items: [
-            'Improved platform scalability and maintainability through standardized development practices',
+            'Improved platform <strong>scalability</strong> and <strong>maintainability</strong> through standardized development practices.',
           ],
         },
       ],

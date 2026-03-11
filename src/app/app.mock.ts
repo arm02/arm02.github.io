@@ -4,7 +4,7 @@ export const DataCollection: ProfileCollection = {
   fullName: 'Professional Profile',
   shortName: 'Professional Profile',
   title:
-    'Adrian Milano <br /> Senior Software Engineer <br /> Jakarta, Indonesia',
+    'Adrian Milano <br /> Senior Fullstack Engineer <br /> Jakarta, Indonesia',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
@@ -15,17 +15,18 @@ export const DataCollection: ProfileCollection = {
     phone: '08112175175',
   },
   count: {
-    experience: 7,
+    experience: 8,
     projects: 30,
     client: 20,
   },
   aboutMe:
-    '<p>Senior Full-Stack Software Engineer with <strong>7+ years</strong> of experience designing and building distributed systems across fintech, SaaS, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices</strong>, automated testing, and CI/CD. Experienced in <strong>architectural design</strong>, API development, and end-to-end delivery of scalable web applications.</p>',
+    '<p>Senior Full-Stack Software Engineer with <strong>8+ years</strong> of experience designing and building distributed systems across fintech, SaaS, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices</strong>, automated testing, and CI/CD. Experienced in <strong>architectural design</strong>, API development, and end-to-end delivery of scalable web applications.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
-    'Full-Stack Development (Go, Node.js/Express, TypeScript)',
+    'Full-Stack Development (Go, Node.js/Express, TypeScript, Spring Boot)',
     'Microservices Architecture',
+    'Domain-Driven Design (DDD)',
     'API Design',
     'Performance Optimization',
     'Clean Architecture',
@@ -35,19 +36,21 @@ export const DataCollection: ProfileCollection = {
     'React',
     'Vue',
     'Next.js',
-    'HTML & CSS',
     'Module Federation',
-    'State Management (NgRx/Redux/Pinia/RxJS/Signal,Hooks)',
+    'State Management (NgRx/Redux/Pinia)',
     'Web Vitals',
     'TailwindCSS',
   ],
   backendSkills: [
     'RESTful & Event-Driven Services',
+    'Spring Boot',
     'Redis',
     'RabbitMQ',
     'Docker',
     'API Gateway (Kong)',
+    'S3 / Presigned Uploads',
     'Cloud (GCP / AWS)',
+    'JVM Tuning & Garbage Collection',
   ],
   qualitySkills: [
     'Jest',
@@ -90,18 +93,46 @@ export const DataCollection: ProfileCollection = {
       title: 'Bachelor Of Education',
       value: '3.69',
     },
-    {
-      period: '2015 - 2018',
-      location: 'SMKN 10 Jakarta',
-      title: 'Bachelor of Engineering',
-      value: '3.5',
-    },
   ],
   experience: [
     {
-      period: 'June 2023 - October 2025',
+      period: 'December 2025 - Present',
+      location: 'Sobat Bisnis Group - Jakarta, Indonesia',
+      title: 'Senior Full Stack Engineer',
+      description: [
+        {
+          title: 'Delivery & Technical Ownership',
+          items: [
+            'Owned end-to-end architecture and delivery of <strong>DDD-based healthcare microservices (Spring Boot, monorepo)</strong>, including RBAC, secure service-to-service communication, and scalable domain boundaries',
+            'Implemented <strong>S3 Presigned PUT uploads</strong>, offline-first capabilities, and multiple external system integrations',
+            'Designed and scaled frontend architecture using <strong>Angular, NgRx, Clean Architecture</strong>, and reusable shared core modules',
+            'Set up <strong>Docker-based deployments</strong> and managed JVM tuning & Garbage Collection strategies to ensure application stability and performance in production',
+            'Authored and implemented a team-wide <strong>Engineering Workflow</strong> covering trunk-based development, pre-development standards, and merge request policies',
+          ],
+        },
+        {
+          title: 'Leadership & Collaboration',
+          items: [
+            'Led and mentored a <strong>team of 6 engineers</strong>, defining technical direction, coding standards, and delivery best practices',
+            'Collaborated closely with clients and stakeholders to translate business requirements into scalable, maintainable technical solutions',
+            'Conducted technical interviews and actively contributed to hiring decisions and team growth',
+            'Delivered internal tech talk as speaker and implementor on <strong>Clean Code & Architecture for Scalable Systems</strong>',
+            'Prepared and aligned team OKR data as part of a Lead Engineer trial, bridging engineering execution with business goals',
+          ],
+        },
+        {
+          title: 'Quality & Operational Excellence',
+          items: [
+            'Improved security and performance by migrating authorization checks from JWT-based validation to <strong>Redis-backed permission caching</strong>',
+            'Established engineering standards and best practices to ensure long-term reliability, scalability, and maintainability of the platform',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'June 2023 - November 2025',
       location: 'PT Pakar Digital Global (Paper.id) - Jakarta, Indonesia',
-      title: 'Senior Software Engineer',
+      title: 'Senior Software Engineer (Prev. Senior Frontend Engineer)',
       description: [
         {
           title: 'Delivery & Technical Ownership',
@@ -109,7 +140,7 @@ export const DataCollection: ProfileCollection = {
             '<strong>Implemented and modernized core fintech modules</strong> using Clean Architecture to improve scalability and maintainability',
             '<strong>Migrated Angular v10→v16</strong>, boosting page load speed <strong>30–50%</strong> and reducing bundle size <strong>40%</strong>.',
             'Developed <strong>full-stack financial workflows</strong> (Go + Angular) including automated withdrawals, secure BIN key storage, and invoice automation.',
-            'Developed <strong>financial services (Paper Card)</strong> and <strong>enterprise-gradesolutions for clients including JAPFA, Plataran, Kopi Kenangan, Qoala, JnT Cargo, and CSA product features</strong>, and built internal tooling that improved operational efficiency and accounting workflow accuracy.',
+            'Developed <strong>financial services (Paper Card)</strong> and <strong>enterprise-grade solutions for clients including JAPFA, Plataran, Kopi Kenangan, Qoala, JnT Cargo, and CSA product features</strong>, and built internal tooling that improved operational efficiency and accounting workflow accuracy.',
             'Optimized frontend performance with <strong>lazy loading</strong> and <strong>modular design practices</strong>.',
           ],
         },
@@ -161,21 +192,23 @@ export const DataCollection: ProfileCollection = {
       ],
     },
     {
-      period: 'January 2021 - February 2022',
+      period: 'August 2020 - February 2022',
       location: 'PT Media Baru Internasional (MoGawe.id) - Jakarta, Indonesia',
-      title: 'Tech Manager',
+      title: 'Tech Manager / Web Developer',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
             'Guided product development across <strong>Angular, Spring Boot, and Flutter</strong> applications',
             'Owned feature <strong>planning</strong> and <strong>technical execution</strong> across web and mobile teams.',
+            'Developed <strong>Angular-based web applications</strong> for internal operational tools and core product modules.',
+            'Implemented system optimization strategies that improved overall performance and reliability by <strong>50%</strong>.',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            '<strong>Provided</strong> technical direction and supported decision-making for engineering squads.',
+            '<strong>Provided</strong> technical direction and managed engineering squads (15+ engineers).',
             'Worked with stakeholders & leadership to <strong>align roadmap</strong> with business needs.',
           ],
         },
@@ -183,27 +216,6 @@ export const DataCollection: ProfileCollection = {
           title: 'Quality & Operational Excellence',
           items: [
             '<strong>Introduced</strong> quality checks & improved testing practices to enhance release reliability.',
-          ],
-        },
-      ],
-    },
-    {
-      period: 'August 2020 - January 2021',
-      location: 'PT Media Baru Internasional (MoGawe.id) - Jakarta, Indonesia',
-      title: 'Web Developer',
-      description: [
-        {
-          title: 'Delivery & Technical Ownership',
-          items: [
-            'Developed <strong>Angular-based web applications</strong> for internal operational tools and core product modules.',
-            'Improved UI workflows to increase <strong>user productivity</strong> and <strong>streamline delivery operations</strong>.',
-            'Implemented system optimization strategies that improved overall performance and reliability by <strong>50%</strong>.',
-          ],
-        },
-        {
-          title: 'Leadership & Collaboration',
-          items: [
-            '<strong>Coordinated</strong> closely with backend and product teams to accelerate feature shipping.',
           ],
         },
       ],
@@ -238,41 +250,18 @@ export const DataCollection: ProfileCollection = {
   ],
   award: [
     {
-      title: '2022 | How To Start Professional Career',
-      description:
-        'Delivered keynote presentation "How To Start Professional Career as Web Developer" at Klasspro.id professional development event.',
-    },
-    {
-      title: '2022 | Student-centered learning systems',
-      description:
-        'CTO & Co-Founder of Elingway, leading the development of student-centered learning systems.',
-    },
-    {
-      title: '2021 | Menghadapi Era Society 5.0',
-      description:
-        'Featured speaker on "Navigating Society 5.0 with Digital Skills" at Secangkir Ilmu educational initiative.',
-    },
-    {
-      title: '2021 | Secangkir Ilmu',
-      description: 'Founder of the Educational Organization Secangkir Ilmu.',
-    },
-    {
-      title: '2021 | Tutors AR/VR',
-      description:
-        'Instructor for AR/VR Development using Unity at Secangkir Ilmu educational platform.',
-    },
-    {
-      title: '2021 | Tutors Web Developer',
-      description:
-        'Web Development Instructor at Secangkir Ilmu educational initiative.',
-    },
-    {
-      title: '2018 | BNSP Software Engineer',
+      title: 'BNSP Certification — Software Development',
       description: 'Officially certified as a Software Engineer.',
     },
     {
-      title: '2017 | Robotic Hackathon',
-      description: 'Competed in a hardware and robotics hackathon.',
+      title: 'Public speaker on Tech Careers, Digital Skills, and Society 5.0',
+      description:
+        'Featured speaker and keynote presenter at various professional development events (Klasspro.id, Secangkir Ilmu).',
+    },
+    {
+      title: 'Founder & Mentor — Secangkir Ilmu',
+      description:
+        'Founder of the Educational Organization Secangkir Ilmu, a tech learning initiative.',
     },
   ],
   latestWork: [
@@ -283,6 +272,18 @@ export const DataCollection: ProfileCollection = {
       Create beautiful, accessible, and performant user interfaces with ease.`,
       link: 'https://sognatore.my.id',
       picture: 'assets/images/sognatore-ui.png',
+    },
+    {
+      title: 'Healthcare ERP Admin System (Akasia)',
+      description: `Developed an internal admin platform for a healthcare ERP system used to manage operational workflows such as patient data management, appointment scheduling, and administrative processes. The system focuses on improving operational efficiency, centralized data management, and providing tools for healthcare staff to manage daily activities through a secure web-based interface.`,
+      link: '#',
+      picture: 'assets/images/akasia.png',
+    },
+    {
+      title: 'Biomedilab Healthcare Admin System',
+      description: `Developed an internal admin platform for managing healthcare laboratory operations, including medical check-up management, patient data, and operational workflows. The system supports administrative processes for healthcare services such as clinical laboratory testing, employee medical check-ups, and health consultation services.`,
+      link: '#',
+      picture: 'assets/images/biomedilab.png',
     },
     {
       title: 'Paper.id',

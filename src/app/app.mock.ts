@@ -4,7 +4,7 @@ export const DataCollection: ProfileCollection = {
   fullName: 'Professional Profile',
   shortName: 'Professional Profile',
   title:
-    'Adrian Milano <br /> Senior Fullstack Engineer <br /> Jakarta, Indonesia',
+    'Adrian Milano <br /> Senior Full Stack Engineer <br /> Jakarta, Indonesia',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',

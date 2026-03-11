@@ -61,7 +61,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   nextSlide() {
-    if (this.currentSlide < 11) {
+    if (this.currentSlide < this.profile.latestWork.length - 1) {
       this.currentSlide++;
     }
   }

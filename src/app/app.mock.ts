@@ -286,6 +286,36 @@ export const DataCollection: ProfileCollection = {
       picture: 'assets/images/biomedilab.png',
     },
     {
+      title: 'Aestha Art Gallery Website',
+      description: `Developed a responsive company profile website for an art gallery based in Bali. The platform showcases collections of modern paintings, custom artwork, and portrait commissions while providing information about the gallery, portfolio, and contact services for potential customers worldwide.`,
+      link: 'https://aestha-art-gallery.vercel.app/',
+      picture: 'assets/images/aestha.png',
+    },
+    {
+      title: 'Little Cookies – Bakery E-Commerce Website',
+      description: `Developed a modern website for a homemade bakery brand that showcases premium cookies, brownies, and gift hampers. The platform allows customers to explore product catalogs, view pricing, and place orders through integrated contact channels.`,
+      link: 'https://www.littlecookies.store/',
+      picture: 'assets/images/little-cookies.png',
+    },
+    {
+      title: 'Team Sembilan Delapan – Agency Company Profile Website',
+      description: `Developed a company profile website for a strategic communication and event management agency. The platform showcases the agency’s services such as event organizing, social media management, branding, and public relations while highlighting portfolios and client collaborations.`,
+      link: 'https://www.teamsembilandelapan.com/',
+      picture: 'assets/images/tsd.png',
+    },
+    {
+      title: 'Personal Financial Management Web Application',
+      description: `Developed a web-based financial management application that helps users track income, expenses, and financial summaries through a simple dashboard. The platform provides an overview of financial activities, enabling users to better manage their personal budgeting and spending.`,
+      link: 'https://financial.adrianmilano.my.id/',
+      picture: 'assets/images/financial.png',
+    },
+    {
+      title: 'Elingway – Online Language Learning Platform Website',
+      description: `Developed a website for an online language learning platform that provides services such as English learning programs and standardized language tests including TOEFL ITP, TOEFL iBT, TOEIC, and IELTS. The platform helps users access language learning resources and certification services through a centralized digital platform.`,
+      link: 'https://www.elingway.id/',
+      picture: 'assets/images/elingway.png',
+    },
+    {
       title: 'Paper.id',
       description: `Paper.id is a billing and payment platform between businesses
       that can be used by SMEs up to large corporations. With
@@ -312,7 +342,7 @@ export const DataCollection: ProfileCollection = {
         business, finance, direct investment, and portfolio investment,
         especially in the capital market.`,
       link: 'https://www.cms.investortrust.id/',
-      picture: 'assets/images/cms-investortrust.png',
+      picture: 'assets/images/cms-investortrust-new.png',
     },
     {
       title: 'CROX',

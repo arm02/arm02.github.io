@@ -242,7 +242,7 @@
         <button
           class="arm-slider-btn arm-slider-next"
           (click)="nextSlide()"
-          [disabled]="currentSlide === 11"
+          [disabled]="currentSlide === profile.latestWork.length - 1"
         >
           <i class="ri-arrow-right-line"></i>
         </button>

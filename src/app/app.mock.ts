@@ -20,7 +20,7 @@ export const DataCollection: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>Senior Full-Stack Software Engineer with <strong>8+ years</strong> of experience designing and building distributed systems across fintech, SaaS, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices</strong>, automated testing, and CI/CD. Experienced in <strong>architectural design</strong>, API development, and end-to-end delivery of scalable web applications.</p>',
+    '<p>Senior Full-Stack Software Engineer with <strong>8+ years</strong> of experience designing and building distributed systems across fintech, SaaS, healthcare, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices, Domain-Driven Design (DDD)</strong>, automated testing, and CI/CD. Experienced in <strong>end-to-end architectural design</strong>, API development, <strong>team leadership</strong>, and scalable delivery across complex domains.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [

@@ -26,6 +26,7 @@ export class AppComponent implements AfterViewInit {
   isLoading = false;
   isLoadingNumber: number = this.profile.latestWork.length;
   currentSlide = 0;
+  isLightMode = false;
   
   constructor() {}
 
@@ -74,5 +75,14 @@ export class AppComponent implements AfterViewInit {
 
   goToSlide(index: number) {
     this.currentSlide = index;
+  }
+
+  toggleTheme() {
+    this.isLightMode = !this.isLightMode;
+    if (this.isLightMode) {
+      document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
   }
 }

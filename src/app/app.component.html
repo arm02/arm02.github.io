@@ -7,6 +7,11 @@
         </a>
         <ul class="arm-social">
           <li>
+            <button class="arm-theme-toggle" (click)="toggleTheme()" aria-label="Toggle Theme">
+              <i [class]="isLightMode ? 'ri-moon-fill' : 'ri-sun-fill'"></i>
+            </button>
+          </li>
+          <li>
             <a [href]="profile.social.github" target="_blank"
               ><i class="ri-github-fill"></i
             ></a>
@@ -183,68 +188,38 @@
   </div>
 </div>
 
-<div class="arm-work-section animate-fade-in-up">
+<div class="arm-modern-work-section animate-fade-in-up" id="latestWorkSection">
   <div class="container">
-    <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
-      FEATURED PROJECTS
-    </h2>
-    <div class="arm-work-slider-container">
-      <div class="arm-work-slider" #workSlider>
-        <div
-          class="arm-work-slide"
-          *ngFor="let latestWork of profile.latestWork; let i = index"
-          [class.active]="i === currentSlide"
-        >
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-              <section class="arm-latestwork-mobile">
-                <h3 class="arm-work-tilte">{{ latestWork.title }}</h3>
-                <p>
-                  {{ latestWork.description }}
-                </p>
-                <a [href]="latestWork.link" class="arm-button" target="_blank"
-                  >See Project</a
-                >
-              </section>
-            </div>
-            <div
-              class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex align-items-center"
-            >
-              <figure>
-                <img
-                  [src]="latestWork.picture"
-                  class="arm-logo-image"
-                  loading="lazy"
-                  alt="Latest Work"
-                />
-              </figure>
-            </div>
+    <div class="arm-section-header">
+      <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
+        FEATURED PROJECTS
+      </h2>
+      <p class="arm-section-subtitle">A selection of my recent work</p>
+    </div>
+
+    <div class="arm-projects-showcase">
+      <div class="arm-project-card" *ngFor="let latestWork of profile.latestWork; let i = index">
+        <div class="arm-project-content">
+          <div class="arm-project-number">{{ (i + 1) | number: '2.0-0' }}</div>
+          <h3 class="arm-project-title">{{ latestWork.title }}</h3>
+          <p class="arm-project-description">{{ latestWork.description }}</p>
+          
+          <ul class="arm-project-tech-stack">
+             <li *ngFor="let tech of latestWork.techStack">{{ tech }}</li>
+          </ul>
+
+          <a [href]="latestWork.link" class="arm-modern-btn" target="_blank">
+            <span>View Project</span>
+            <i class="ri-arrow-right-line"></i>
+          </a>
+        </div>
+        
+        <div class="arm-project-preview">
+          <div class="arm-project-image-wrapper">
+             <img [src]="latestWork.picture" alt="Project Preview" loading="lazy" />
+             <div class="arm-project-overlay"></div>
           </div>
         </div>
-      </div>
-      <div class="arm-slider-controls">
-        <button
-          class="arm-slider-btn arm-slider-prev"
-          (click)="previousSlide()"
-          [disabled]="currentSlide === 0"
-        >
-          <i class="ri-arrow-left-line"></i>
-        </button>
-        <div class="arm-slider-dots">
-          <button
-            *ngFor="let dot of profile.latestWork; let i = index"
-            class="arm-slider-dot"
-            [class.active]="i === currentSlide"
-            (click)="goToSlide(i)"
-          ></button>
-        </div>
-        <button
-          class="arm-slider-btn arm-slider-next"
-          (click)="nextSlide()"
-          [disabled]="currentSlide === profile.latestWork.length - 1"
-        >
-          <i class="ri-arrow-right-line"></i>
-        </button>
       </div>
     </div>
   </div>

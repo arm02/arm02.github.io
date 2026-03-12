@@ -272,48 +272,56 @@ export const DataCollection: ProfileCollection = {
       Create beautiful, accessible, and performant user interfaces with ease.`,
       link: 'https://sognatore.my.id',
       picture: 'assets/images/sognatore-ui.png',
+      techStack: ['Angular', 'TypeScript', 'RxJS'],
     },
     {
       title: 'Healthcare ERP Admin System (Akasia)',
       description: `Developed an internal admin platform for a healthcare ERP system used to manage operational workflows such as patient data management, appointment scheduling, and administrative processes. The system focuses on improving operational efficiency, centralized data management, and providing tools for healthcare staff to manage daily activities through a secure web-based interface.`,
       link: '#',
       picture: 'assets/images/akasia.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Biomedilab Healthcare Admin System',
       description: `Developed an internal admin platform for managing healthcare laboratory operations, including medical check-up management, patient data, and operational workflows. The system supports administrative processes for healthcare services such as clinical laboratory testing, employee medical check-ups, and health consultation services.`,
       link: '#',
       picture: 'assets/images/biomedilab.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Aestha Art Gallery Website',
       description: `Developed a responsive company profile website for an art gallery based in Bali. The platform showcases collections of modern paintings, custom artwork, and portrait commissions while providing information about the gallery, portfolio, and contact services for potential customers worldwide.`,
       link: 'https://aestha-art-gallery.vercel.app/',
       picture: 'assets/images/aestha.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Little Cookies – Bakery E-Commerce Website',
       description: `Developed a modern website for a homemade bakery brand that showcases premium cookies, brownies, and gift hampers. The platform allows customers to explore product catalogs, view pricing, and place orders through integrated contact channels.`,
       link: 'https://www.littlecookies.store/',
       picture: 'assets/images/little-cookies.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Team Sembilan Delapan – Agency Company Profile Website',
       description: `Developed a company profile website for a strategic communication and event management agency. The platform showcases the agency’s services such as event organizing, social media management, branding, and public relations while highlighting portfolios and client collaborations.`,
       link: 'https://www.teamsembilandelapan.com/',
       picture: 'assets/images/tsd.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Personal Financial Management Web Application',
       description: `Developed a web-based financial management application that helps users track income, expenses, and financial summaries through a simple dashboard. The platform provides an overview of financial activities, enabling users to better manage their personal budgeting and spending.`,
       link: 'https://financial.adrianmilano.my.id/',
       picture: 'assets/images/financial.png',
+      techStack: ['Laravel', 'PHP', 'MySQL'],
     },
     {
       title: 'Elingway – Online Language Learning Platform Website',
       description: `Developed a website for an online language learning platform that provides services such as English learning programs and standardized language tests including TOEFL ITP, TOEFL iBT, TOEIC, and IELTS. The platform helps users access language learning resources and certification services through a centralized digital platform.`,
       link: 'https://www.elingway.id/',
       picture: 'assets/images/elingway.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Paper.id',
@@ -326,6 +334,7 @@ export const DataCollection: ProfileCollection = {
       various payment methods.`,
       link: 'https://www.paper.id',
       picture: 'assets/images/paper.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Investortrust.id',
@@ -334,6 +343,7 @@ export const DataCollection: ProfileCollection = {
           portfolio investment, especially in the capital market.`,
       link: 'https://www.investortrust.id/',
       picture: 'assets/images/investortrust.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'CMS Investortrust.id',
@@ -343,6 +353,7 @@ export const DataCollection: ProfileCollection = {
         especially in the capital market.`,
       link: 'https://www.cms.investortrust.id/',
       picture: 'assets/images/cms-investortrust-new.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'CROX',
@@ -352,6 +363,7 @@ export const DataCollection: ProfileCollection = {
           register yourself now and enjoy the advantages.`,
       link: 'https://crox.id',
       picture: 'assets/images/crox.png',
+      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
     },
     {
       title: 'MoGawe.id',
@@ -363,6 +375,7 @@ export const DataCollection: ProfileCollection = {
       toward individuals seeking flexible work, such as students, homemakers, or freelancers.`,
       link: 'https://mogawe.id/',
       picture: 'assets/images/mogawe.png',
+      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
     },
     {
       title: 'MoGawe Business',
@@ -373,6 +386,7 @@ export const DataCollection: ProfileCollection = {
         at least IDR 200,000 per day by completing simple tasks.`,
       link: 'https://bisnis.mogawe.id/',
       picture: 'assets/images/mogawe-bisnis.png',
+      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
     },
     {
       title: 'Adeya Mobile Apps',
@@ -389,6 +403,7 @@ export const DataCollection: ProfileCollection = {
         SiDia`,
       link: 'https://play.google.com/store/apps/details?id=com.kominfo.sfrsorapp&hl=en_US',
       picture: 'assets/images/adeya.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Data Validation Of Frequency Radio (ISR QR CODE)',
@@ -398,6 +413,7 @@ export const DataCollection: ProfileCollection = {
         licenses, using Laravel.`,
       link: 'https://isrcode.postel.go.id/public/login',
       picture: 'assets/images/isrcode.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
     {
       title: 'Website Certification (REOR)',
@@ -406,6 +422,7 @@ export const DataCollection: ProfileCollection = {
         and training print, using PHP YII.`,
       link: 'https://reor.postel.go.id/',
       picture: 'assets/images/reor.png',
+      techStack: ['Laravel', 'PHP', 'MySQL'],
     },
     {
       title: 'COMPUTER ASSISTED TEST (CAT)',
@@ -414,6 +431,7 @@ export const DataCollection: ProfileCollection = {
         Laravel.`,
       link: 'https://cat.postel.go.id/',
       picture: 'assets/images/cat.png',
+      techStack: ['Laravel', 'PHP', 'MySQL'],
     },
     {
       title: 'QUEUE SYSTEM',
@@ -421,6 +439,7 @@ export const DataCollection: ProfileCollection = {
           consultation queue system, using Laravel.`,
       link: 'https://antrian.bkpm.go.id/registrasi/',
       picture: 'assets/images/bkpm.png',
+      techStack: ['Frontend', 'Web', 'Cloud'],
     },
   ],
 };

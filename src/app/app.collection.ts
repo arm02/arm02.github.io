@@ -29,6 +29,7 @@ export interface LatestWorkCollection {
   description: string;
   link: string;
   picture: string;
+  techStack?: string[];
 }
 
 export interface ExperienceCollection {

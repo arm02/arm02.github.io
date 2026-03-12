@@ -5,13 +5,14 @@
 
 // Prevent layout shift during animations
 .arm-banner {
-  min-height: 400px; // Reserve space to prevent layout shift
-  margin-bottom: 60px;
+  min-height: 400px;
+  margin-bottom: 5vh; // More breathing space on desktop
 }
 
 @media (max-width: 768px) {
   .arm-banner {
     min-height: 500px;
+    margin-bottom: 20px; // Tighter on mobile
   }
 }
 

@@ -3,11 +3,8 @@
     <div class="container">
       <div class="arm-header-inner">
         <a href="/" class="arm-logo arm-logo-title-web">
-          <span>A</span>{{ profile.fullName }}</a
-        >
-        <a href="/" class="arm-logo arm-logo-title-mobile">
-          <span>A</span>{{ profile.shortName }}</a
-        >
+          <span>A</span><span class="logo-text">{{ profile.fullName }}</span>
+        </a>
         <ul class="arm-social">
           <li>
             <a [href]="profile.social.github" target="_blank"
@@ -41,8 +38,10 @@
       </div>
       <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
         <section class="animate-slide-right">
-          <h1 class="animate-typing">
-            <span class="animate-bounce">HELLO</span>
+          <div class="arm-hello-badge-container">
+            <span class="animate-bounce arm-hello-badge">HELLO</span>
+          </div>
+          <h1 class="arm-banner-title animate-fade-in-up">
             <div [innerHTML]="profile.title"></div>
           </h1>
         </section>

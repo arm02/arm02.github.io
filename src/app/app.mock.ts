@@ -1,6 +1,6 @@
 import { ProfileCollection } from './app.collection';
 
-export const DataCollection: ProfileCollection = {
+export const DataCollectionEn: ProfileCollection = {
   fullName: 'Professional Profile',
   shortName: 'Professional Profile',
   title:
@@ -272,56 +272,56 @@ export const DataCollection: ProfileCollection = {
       Create beautiful, accessible, and performant user interfaces with ease.`,
       link: 'https://sognatore.my.id',
       picture: 'assets/images/sognatore-ui.png',
-      techStack: ['Angular', 'TypeScript', 'RxJS'],
+      techStack: ['Angular', 'TypeScript'],
     },
     {
       title: 'Healthcare ERP Admin System (Akasia)',
       description: `Developed an internal admin platform for a healthcare ERP system used to manage operational workflows such as patient data management, appointment scheduling, and administrative processes. The system focuses on improving operational efficiency, centralized data management, and providing tools for healthcare staff to manage daily activities through a secure web-based interface.`,
       link: '#',
       picture: 'assets/images/akasia.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Java Spring Boot', 'Angular', 'Docker', 'Redis', 'PostgreSQL', 'Microservices', 'Clean Architecture'],
     },
     {
       title: 'Biomedilab Healthcare Admin System',
       description: `Developed an internal admin platform for managing healthcare laboratory operations, including medical check-up management, patient data, and operational workflows. The system supports administrative processes for healthcare services such as clinical laboratory testing, employee medical check-ups, and health consultation services.`,
       link: '#',
       picture: 'assets/images/biomedilab.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Java Spring Boot', 'Angular', 'Docker', 'Redis', 'PostgreSQL', 'Microservices', 'Clean Architecture'],
     },
     {
       title: 'Aestha Art Gallery Website',
       description: `Developed a responsive company profile website for an art gallery based in Bali. The platform showcases collections of modern paintings, custom artwork, and portrait commissions while providing information about the gallery, portfolio, and contact services for potential customers worldwide.`,
       link: 'https://aestha-art-gallery.vercel.app/',
       picture: 'assets/images/aestha.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
     },
     {
       title: 'Little Cookies – Bakery E-Commerce Website',
       description: `Developed a modern website for a homemade bakery brand that showcases premium cookies, brownies, and gift hampers. The platform allows customers to explore product catalogs, view pricing, and place orders through integrated contact channels.`,
       link: 'https://www.littlecookies.store/',
       picture: 'assets/images/little-cookies.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
     },
     {
       title: 'Team Sembilan Delapan – Agency Company Profile Website',
       description: `Developed a company profile website for a strategic communication and event management agency. The platform showcases the agency’s services such as event organizing, social media management, branding, and public relations while highlighting portfolios and client collaborations.`,
       link: 'https://www.teamsembilandelapan.com/',
       picture: 'assets/images/tsd.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
     },
     {
       title: 'Personal Financial Management Web Application',
       description: `Developed a web-based financial management application that helps users track income, expenses, and financial summaries through a simple dashboard. The platform provides an overview of financial activities, enabling users to better manage their personal budgeting and spending.`,
       link: 'https://financial.adrianmilano.my.id/',
       picture: 'assets/images/financial.png',
-      techStack: ['Laravel', 'PHP', 'MySQL'],
+      techStack: ['Golang', 'Angular', 'MySQL', 'Redis', 'Docker', 'ChartJS', 'Clean Architecture'],
     },
     {
       title: 'Elingway – Online Language Learning Platform Website',
       description: `Developed a website for an online language learning platform that provides services such as English learning programs and standardized language tests including TOEFL ITP, TOEFL iBT, TOEIC, and IELTS. The platform helps users access language learning resources and certification services through a centralized digital platform.`,
       link: 'https://www.elingway.id/',
       picture: 'assets/images/elingway.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['VueJS', 'Laravel', 'MySQL'],
     },
     {
       title: 'Paper.id',
@@ -334,7 +334,7 @@ export const DataCollection: ProfileCollection = {
       various payment methods.`,
       link: 'https://www.paper.id',
       picture: 'assets/images/paper.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Angular', 'Golang', 'ArangoDB', 'MySQL'],
     },
     {
       title: 'Investortrust.id',
@@ -343,7 +343,7 @@ export const DataCollection: ProfileCollection = {
           portfolio investment, especially in the capital market.`,
       link: 'https://www.investortrust.id/',
       picture: 'assets/images/investortrust.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['NextJS', 'Express JS', 'MySQL', 'Docker'],
     },
     {
       title: 'CMS Investortrust.id',
@@ -353,7 +353,7 @@ export const DataCollection: ProfileCollection = {
         especially in the capital market.`,
       link: 'https://www.cms.investortrust.id/',
       picture: 'assets/images/cms-investortrust-new.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Angular', 'Express JS', 'MySQL', 'Docker'],
     },
     {
       title: 'CROX',
@@ -363,7 +363,7 @@ export const DataCollection: ProfileCollection = {
           register yourself now and enjoy the advantages.`,
       link: 'https://crox.id',
       picture: 'assets/images/crox.png',
-      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
+      techStack: ['Angular'],
     },
     {
       title: 'MoGawe.id',
@@ -375,7 +375,7 @@ export const DataCollection: ProfileCollection = {
       toward individuals seeking flexible work, such as students, homemakers, or freelancers.`,
       link: 'https://mogawe.id/',
       picture: 'assets/images/mogawe.png',
-      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
+      techStack: ['Angular', 'Spring Boot', 'MySQL'],
     },
     {
       title: 'MoGawe Business',
@@ -403,7 +403,7 @@ export const DataCollection: ProfileCollection = {
         SiDia`,
       link: 'https://play.google.com/store/apps/details?id=com.kominfo.sfrsorapp&hl=en_US',
       picture: 'assets/images/adeya.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Kotlin', 'Express JS', 'MySQL'],
     },
     {
       title: 'Data Validation Of Frequency Radio (ISR QR CODE)',
@@ -413,7 +413,7 @@ export const DataCollection: ProfileCollection = {
         licenses, using Laravel.`,
       link: 'https://isrcode.postel.go.id/public/login',
       picture: 'assets/images/isrcode.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Laravel', 'MySQL'],
     },
     {
       title: 'Website Certification (REOR)',
@@ -422,7 +422,7 @@ export const DataCollection: ProfileCollection = {
         and training print, using PHP YII.`,
       link: 'https://reor.postel.go.id/',
       picture: 'assets/images/reor.png',
-      techStack: ['Laravel', 'PHP', 'MySQL'],
+      techStack: ['Code Igniter', 'PHP', 'MySQL'],
     },
     {
       title: 'COMPUTER ASSISTED TEST (CAT)',
@@ -439,7 +439,408 @@ export const DataCollection: ProfileCollection = {
           consultation queue system, using Laravel.`,
       link: 'https://antrian.bkpm.go.id/registrasi/',
       picture: 'assets/images/bkpm.png',
-      techStack: ['Frontend', 'Web', 'Cloud'],
+      techStack: ['Laravel', 'MySQL'],
+    },
+  ],
+};
+
+export const DataCollectionId: ProfileCollection = {
+  fullName: 'Profil Profesional',
+  shortName: 'Profil Profesional',
+  title:
+    'Adrian Milano <br /> <span class="arm-title-sub">Senior Full Stack Engineer <br /> Jakarta, Indonesia</span>',
+  social: {
+    github: 'https://github.com/arm02',
+    gitlab: 'https://gitlab.com/arm02',
+    linkedin: 'https://www.linkedin.com/in/arm02',
+  },
+  contact: {
+    whatsapps: 'https://wa.me/628112175175',
+    phone: '08112175175',
+  },
+  count: {
+    experience: 8,
+    projects: 30,
+    client: 20,
+  },
+  aboutMe:
+    '<p>Senior Full-Stack Software Engineer dengan pengalaman <strong>8+ tahun</strong> dalam merancang dan membangun sistem terdistribusi di sektor fintech, SaaS, kesehatan, enterprise, crowdsourcing, dan platform layanan publik. Memiliki keahlian mendalam di <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, dan Angular modern.</strong> Terbukti berhasil meningkatkan performa (<strong>−50% kecepatan muat halaman, −40% ukuran bundle</strong>), keandalan sistem, dan kecepatan pengembangan melalui <strong>microservices, Domain-Driven Design (DDD)</strong>, pengujian otomatis, dan CI/CD. Berpengalaman dalam <strong>perancangan arsitektur end-to-end</strong>, pengembangan API, <strong>kepemimpinan tim</strong>, dan pengiriman solusi yang skalabel di domain yang kompleks.</p>',
+  resumeLink:
+    'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
+  coreSkills: [
+    'Pengembangan Full-Stack (Go, Node.js/Express, TypeScript, Spring Boot)',
+    'Arsitektur Microservices',
+    'Domain-Driven Design (DDD)',
+    'Desain API',
+    'Optimasi Performa',
+    'Clean Architecture',
+  ],
+  frontendSkills: [
+    'Angular',
+    'React',
+    'Vue',
+    'Next.js',
+    'Module Federation',
+    'State Management (NgRx/Redux/Pinia)',
+    'Web Vitals',
+    'TailwindCSS',
+  ],
+  backendSkills: [
+    'RESTful & Event-Driven Services',
+    'Spring Boot',
+    'Redis',
+    'RabbitMQ',
+    'Docker',
+    'API Gateway (Kong)',
+    'S3 / Presigned Uploads',
+    'Cloud (GCP / AWS)',
+    'Tuning JVM & Garbage Collection',
+  ],
+  qualitySkills: [
+    'Jest',
+    'SonarQube',
+    'Pipa Pengujian Otomatis',
+    'Trunk-Based Development',
+    'CI/CD (GitHub Actions, GitLab, Jenkins)',
+  ],
+  monitoringSkills: [
+    'New Relic',
+    'Sentry',
+    'Real User Monitoring (RUM)',
+    'Dashboard Performa',
+  ],
+  databaseSkills: [
+    'MySQL',
+    'PostgreSQL',
+    'MongoDB',
+    'ArangoDB',
+    'Firebase (Realtime & Firestore)',
+  ],
+  workflows: [
+    'Clean Architecture & Code',
+    'Test-Driven Development',
+    'Trunk-Based Development',
+    'Pemantauan Aplikasi',
+    'Arsitektur Micro Frontend',
+    'Arsitektur Microservice',
+    'CI/CD & Jenkins',
+    'Kualitas Kode dengan SonarQube',
+    'Metodologi Agile & Scrum',
+    'Pengujian & Debugging Antar-Browser',
+    'Kolaborasi Tim Lintas Fungsional',
+    'Siklus Hidup Pengembangan Perangkat Lunak',
+  ],
+  education: [
+    {
+      period: '2018 - 2023',
+      location: 'Universitas Negeri Jakarta',
+      title: 'Sarjana Pendidikan',
+      value: '3.69',
+    },
+  ],
+  experience: [
+    {
+      period: 'Desember 2025 - Sekarang',
+      location: 'Sobat Bisnis Group - Jakarta, Indonesia',
+      title: 'Senior Full Stack Engineer',
+      description: [
+        {
+          title: 'Pengiriman & Kepemimpinan Teknis',
+          items: [
+            'Memegang tanggung jawab penuh atas arsitektur dan pengiriman <strong>microservices kesehatan berbasis DDD (Spring Boot, monorepo)</strong>, termasuk RBAC, komunikasi antar-layanan yang aman, dan batasan domain yang skalabel',
+            'Mengimplementasikan <strong>S3 Presigned PUT uploads</strong>, kemampuan offline-first, dan integrasi dengan berbagai sistem eksternal',
+            'Merancang dan menskalakan arsitektur frontend menggunakan <strong>Angular, NgRx, Clean Architecture</strong>, dan modul inti bersama yang dapat digunakan kembali',
+            'Menyiapkan <strong>deployment berbasis Docker</strong> dan mengelola strategi tuning JVM & Garbage Collection untuk memastikan stabilitas dan performa aplikasi di lingkungan produksi',
+            'Menyusun dan mengimplementasikan <strong>Alur Kerja Rekayasa (Engineering Workflow)</strong> di tingkat tim yang mencakup trunk-based development, standar pra-pengembangan, dan kebijakan merge request',
+          ],
+        },
+        {
+          title: 'Kepemimpinan & Kolaborasi',
+          items: [
+            'Memimpin dan membimbing <strong>tim berjumlah 6 engineer</strong>, menetapkan arah teknis, standar penulisan kode, dan praktik terbaik pengiriman solusi',
+            'Berkolaborasi erat dengan klien dan pemangku kepentingan untuk menerjemahkan kebutuhan bisnis menjadi solusi teknis yang skalabel dan mudah dipelihara',
+            'Melakukan wawancara teknis dan berkontribusi aktif dalam keputusan perekrutan serta pertumbuhan tim',
+            'Memberikan sesi berbagi ilmu internal (tech talk) sebagai pembicara dan pelaksana topik <strong>Clean Code & Arsitektur untuk Sistem Berbasis Skala</strong>',
+            'Menyiapkan dan menyelaraskan data OKR tim sebagai bagian dari uji coba Lead Engineer, menghubungkan eksekusi rekayasa dengan tujuan bisnis',
+          ],
+        },
+        {
+          title: 'Kualitas & Keunggulan Operasional',
+          items: [
+            'Meningkatkan keamanan dan performa dengan memigrasikan pemeriksaan otorisasi dari validasi berbasis JWT ke <strong>cache izin berbasis Redis</strong>',
+            'Menetapkan standar rekayasa dan praktik terbaik untuk memastikan keandalan, skalabilitas, dan kemudahan pemeliharaan jangka panjang pada platform',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'Juni 2023 - November 2025',
+      location: 'PT Pakar Digital Global (Paper.id) - Jakarta, Indonesia',
+      title: 'Senior Software Engineer (Sebelumnya Senior Frontend Engineer)',
+      description: [
+        {
+          title: 'Pengiriman & Kepemimpinan Teknis',
+          items: [
+            '<strong>Mengimplementasikan dan memodernisasi modul inti fintech</strong> menggunakan Clean Architecture untuk meningkatkan skalabilitas dan kemudahan pemeliharaan',
+            '<strong>Memigrasikan Angular v10→v16</strong>, meningkatkan kecepatan muat halaman sebesar <strong>30–50%</strong> dan mengurangi ukuran bundle sebesar <strong>40%</strong>.',
+            'Mengembangkan <strong>alur kerja finansial full-stack</strong> (Go + Angular) termasuk penarikan dana otomatis, penyimpanan kunci BIN yang aman, dan otomatisasi faktur.',
+            'Mengembangkan <strong>layanan keuangan (Paper Card)</strong> dan <strong>solusi kelas enterprise untuk klien termasuk JAPFA, Plataran, Kopi Kenangan, Qoala, JnT Cargo, serta fitur produk CSA</strong>, dan membangun alat internal yang meningkatkan efisiensi operasional dan akurasi alur kerja akuntansi.',
+            'Mengoptimalkan performa frontend dengan <strong>lazy loading</strong> dan <strong>praktik desain modular</strong>.',
+          ],
+        },
+        {
+          title: 'Kepemimpinan & Kolaborasi',
+          items: [
+            'Membimbing <strong>3–4 engineer</strong> dalam praktik frontend, strategi pengujian, dan desain modular',
+            'Meningkatkan keselarasan FE–BE dengan mendorong pedoman <strong>kontrak API</strong> bersama antara tim backend & produk',
+          ],
+        },
+        {
+          title: 'Kualitas & Keunggulan Operasional',
+          items: [
+            'Meningkatkan cakupan pengujian hingga <strong>90%+</strong> dan membangun <strong>pipa CI/CD</strong> (linting, validasi pull request, pengecekan kualitas otomatis), memungkinkan rilis produksi mingguan.',
+            'Mengimplementasikan <strong>pemantauan New Relic</strong> untuk diagnosis masalah yang lebih cepat dan pelacakan keandalan',
+            '<strong>Merancang strategi Micro Frontend</strong> untuk mendukung pengembangan produk yang skalabel dan independen',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'Februari 2022 - Juni 2023',
+      location: 'PT Ako Media Asia (SALT.ID) - Jakarta, Indonesia',
+      title: 'Senior Frontend Developer',
+      description: [
+        {
+          title: 'Pengiriman & Kepemimpinan Teknis',
+          items: [
+            '<strong>Mengembangkan platform pelanggan dan mitra berbasis Angular</strong> yang melayani klien enterprise seperti <strong>Telkomsel (CROX & TSurvey)</strong>.',
+            'Merancang arsitektur <strong>struktur komponen modular</strong> dan <strong>alur caching</strong> yang meningkatkan <strong>performa & ketersediaan</strong>.',
+            'Memigrasikan infrastruktur pengujian dari Karma/Jasmine ke Jest, mencapai cakupan pengujian <strong>98%+</strong>.',
+          ],
+        },
+        {
+          title: 'Kepemimpinan & Kolaborasi',
+          items: [
+            'Memimpin <strong>~10 engineer</strong> dalam skuad pengembangan lintas fungsional, mengoordinasikan antara FE, BE, QA, dan Produk.',
+            'Mendukung pengiriman peta jalan produk (roadmap) dengan <strong>meninjau keputusan desain teknis</strong> yang selaras dengan tujuan bisnis.',
+          ],
+        },
+        {
+          title: 'Kualitas & Keunggulan Operasional',
+          items: [
+            'Meningkatkan <strong>efektivitas alur kerja pengembangan</strong> melalui optimasi build dan alat pengembangan.',
+            'Meningkatkan keandalan rilis dengan <strong>memperkuat</strong> praktik pengujian dan <string>pencegahan kesalahan</string>.',
+            '<strong>Mengurangi SonarQube</strong> code smells, bug, dan celah keamanan sebesar <strong>40–50%</strong> melalui kolaborasi tim yang erat dan upaya refactoring terarah, menghasilkan kualitas kode dan keandalan sistem yang lebih tinggi.',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'Agustus 2020 - Februari 2022',
+      location: 'PT Media Baru Internasional (MoGawe.id) - Jakarta, Indonesia',
+      title: 'Tech Manager / Web Developer',
+      description: [
+        {
+          title: 'Pengiriman & Kepemimpinan Teknis',
+          items: [
+            'Mengarahkan pengembangan produk pada aplikasi <strong>Angular, Spring Boot, dan Flutter</strong>',
+            'Bertanggung jawab atas <strong>perencanaan</strong> fitur dan <strong>eksekusi teknis</strong> di seluruh tim web dan mobile.',
+            'Mengembangkan <strong>aplikasi web berbasis Angular</strong> untuk alat operasional internal dan modul produk inti.',
+            'Mengimplementasikan strategi optimasi sistem yang meningkatkan performa keseluruhan dan keandalan sebesar <strong>50%</strong>.',
+          ],
+        },
+        {
+          title: 'Kepemimpinan & Kolaborasi',
+          items: [
+            '<strong>Memberikan</strong> arah teknis dan mengelola skuad rekayasa (15+ engineer).',
+            'Bekerja sama dengan pemangku kepentingan & pimpinan untuk <strong>menyelaraskan roadmap</strong> dengan kebutuhan bisnis.',
+          ],
+        },
+        {
+          title: 'Kualitas & Keunggulan Operasional',
+          items: [
+            '<strong>Memperkenalkan</strong> pemeriksaan kualitas & meningkatkan praktik pengujian untuk meningkatkan keandalan rilis.',
+          ],
+        },
+      ],
+    },
+    {
+      period: 'Juli 2018 - Agustus 2020',
+      location: 'CV INTI MULTI SOLUSI - Jakarta, Indonesia',
+      title: 'Fullstack Engineer',
+      description: [
+        {
+          title: 'Pengiriman & Kepemimpinan Teknis',
+          items: [
+            'Mengembangkan platform web pemerintah yang aman menggunakan <strong>Laravel, Node.js, Android Native, PHP</strong>.',
+            '<strong>Mengimplementasikan</strong> fitur backend dan desain database yang selaras dengan persyaratan kepatuhan.',
+          ],
+        },
+        {
+          title: 'Kepemimpinan & Kolaborasi',
+          items: [
+            'Berkoordinasi dengan pemangku kepentingan pemerintah untuk memastikan pengiriman kebutuhan yang <strong>akurat</strong>.',
+            '<strong>Berkolaborasi</strong> dengan tim UI/UX untuk peningkatan kegunaan (usability) pada sistem layanan publik.',
+          ],
+        },
+        {
+          title: 'Kualitas & Keunggulan Operasional',
+          items: [
+            'Meningkatkan <strong>skalabilitas</strong> dan <strong>kemudahan pemeliharaan</strong> platform melalui praktik pengembangan yang terstandarisasi.',
+          ],
+        },
+      ],
+    },
+  ],
+  award: [
+    {
+      title: 'Sertifikasi BNSP — Pengembangan Perangkat Lunak',
+      description: 'Secara resmi bersertifikat sebagai Software Engineer.',
+    },
+    {
+      title: 'Pembicara Publik tentang Karir Teknologi, Keterampilan Digital, dan Society 5.0',
+      description:
+        'Pembicara tamu dan presenter utama di berbagai acara pengembangan profesional (Klasspro.id, Secangkir Ilmu).',
+    },
+    {
+      title: 'Pendiri & Mentor — Secangkir Ilmu',
+      description:
+        'Pendiri Organisasi Pendidikan Secangkir Ilmu, sebuah inisiatif pembelajaran teknologi.',
+    },
+  ],
+  latestWork: [
+    {
+      title: 'Sognatore UI',
+      description: `Pustaka komponen Angular modern yang dibangun dengan standalone components, dirancang untuk produktivitas, desain yang konsisten, dan integrasi yang mulus. Ciptakan antarmuka pengguna yang indah, aksesibel, dan berperforma tinggi dengan mudah.`,
+      link: 'https://sognatore.my.id',
+      picture: 'assets/images/sognatore-ui.png',
+      techStack: ['Angular', 'TypeScript'],
+    },
+    {
+      title: 'Healthcare ERP Admin System (Akasia)',
+      description: `Mengembangkan platform admin internal untuk sistem ERP kesehatan yang digunakan untuk mengelola alur kerja operasional seperti manajemen data pasien, penjadwalan janji temu, dan proses administratif. Sistem ini berfokus pada peningkatan efisiensi operasional, manajemen data terpusat, dan menyediakan alat bagi staf kesehatan untuk mengelola aktivitas harian melalui antarmuka berbasis web yang aman.`,
+      link: '#',
+      picture: 'assets/images/akasia.png',
+      techStack: ['Java Spring Boot', 'Angular', 'Docker', 'Redis', 'PostgreSQL', 'Microservices', 'Clean Architecture'],
+    },
+    {
+      title: 'Biomedilab Healthcare Admin System',
+      description: `Mengembangkan platform admin internal untuk mengelola operasional laboratorium kesehatan, termasuk manajemen medical check-up, data pasien, dan alur kerja operasional. Sistem ini mendukung proses administratif untuk layanan kesehatan seperti pengujian laboratorium klinis, pemeriksaan kesehatan karyawan, dan layanan konsultasi kesehatan.`,
+      link: '#',
+      picture: 'assets/images/biomedilab.png',
+      techStack: ['Java Spring Boot', 'Angular', 'Docker', 'Redis', 'PostgreSQL', 'Microservices', 'Clean Architecture'],
+    },
+    {
+      title: 'Aestha Art Gallery Website',
+      description: `Mengembangkan situs profil perusahaan yang responsif untuk galeri seni yang berbasis di Bali. Platform ini menampilkan koleksi lukisan modern, karya seni kustom, dan pesanan potret sembari memberikan informasi tentang galeri, portofolio, dan layanan kontak untuk calon pelanggan di seluruh dunia.`,
+      link: 'https://aestha-art-gallery.vercel.app/',
+      picture: 'assets/images/aestha.png',
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
+    },
+    {
+      title: 'Little Cookies – Bakery E-Commerce Website',
+      description: `Mengembangkan situs web modern untuk merek toko roti rumahan yang menampilkan kue kering premium, brownies, dan hamper hadiah. Platform ini memungkinkan pelanggan untuk menjelajahi katalog produk, melihat harga, dan melakukan pemesanan melalui saluran kontak yang terintegrasi.`,
+      link: 'https://www.littlecookies.store/',
+      picture: 'assets/images/little-cookies.png',
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
+    },
+    {
+      title: 'Team Sembilan Delapan – Agency Company Profile Website',
+      description: `Mengembangkan situs profil perusahaan untuk agensi komunikasi strategis dan manajemen acara. Platform ini menampilkan layanan agensi seperti penyelenggaraan acara, manajemen media sosial, branding, dan hubungan masyarakat sembari menyoroti portofolio dan kolaborasi klien.`,
+      link: 'https://www.teamsembilandelapan.com/',
+      picture: 'assets/images/tsd.png',
+      techStack: ['NextJS', 'Redis', 'Clean Architecture'],
+    },
+    {
+      title: 'Personal Financial Management Web Application',
+      description: `Mengembangkan aplikasi manajemen keuangan berbasis web yang membantu pengguna melacak pendapatan, pengeluaran, dan ringkasan keuangan melalui dasbor sederhana. Platform ini memberikan gambaran umum aktivitas keuangan, memungkinkan pengguna untuk mengelola anggaran dan pengeluaran pribadi dengan lebih baik.`,
+      link: 'https://financial.adrianmilano.my.id/',
+      picture: 'assets/images/financial.png',
+      techStack: ['Golang', 'Angular', 'MySQL', 'Redis', 'Docker', 'ChartJS', 'Clean Architecture'],
+    },
+    {
+      title: 'Elingway – Online Language Learning Platform Website',
+      description: `Mengembangkan situs web untuk platform pembelajaran bahasa daring yang menyediakan layanan seperti program pembelajaran bahasa Inggris dan tes bahasa standar termasuk TOEFL ITP, TOEFL iBT, TOEIC, dan IELTS. Platform ini membantu pengguna mengakses sumber daya pembelajaran bahasa dan layanan sertifikasi melalui platform digital terpusat.`,
+      link: 'https://www.elingway.id/',
+      picture: 'assets/images/elingway.png',
+      techStack: ['VueJS', 'Laravel', 'MySQL'],
+    },
+    {
+      title: 'Paper.id',
+      description: `Paper.id adalah platform penagihan dan pembayaran antar bisnis yang dapat digunakan oleh UMKM hingga korporasi besar. Dengan Paper.id, transaksi antara pembeli dan pemasok menjadi lebih mudah. Pemasok dapat menerima pembayaran lebih cepat melalui berbagai metode pembayaran yang tersedia dan merekonsiliasi semuanya secara otomatis dalam satu platform. Sementara itu, pembeli bebas memilih dari berbagai metode pembayaran.`,
+      link: 'https://www.paper.id',
+      picture: 'assets/images/paper.png',
+      techStack: ['Angular', 'Golang', 'ArangoDB', 'MySQL'],
+    },
+    {
+      title: 'Investortrust.id',
+      description: `Investortrust.id adalah portal data dan berita ekonomi independen yang berfokus pada bisnis, keuangan, investasi langsung, dan investasi portofolio, terutama di pasar modal.`,
+      link: 'https://www.investortrust.id/',
+      picture: 'assets/images/investortrust.png',
+      techStack: ['NextJS', 'Express JS', 'MySQL', 'Docker'],
+    },
+    {
+      title: 'CMS Investortrust.id',
+      description: `Content Management System untuk mengelola konten di Investortrust.id, portal data dan berita ekonomi independen yang berfokus pada bisnis, keuangan, investasi langsung, dan investasi portofolio, terutama di pasar modal.`,
+      link: 'https://www.cms.investortrust.id/',
+      picture: 'assets/images/cms-investortrust-new.png',
+      techStack: ['Angular', 'Express JS', 'MySQL', 'Docker'],
+    },
+    {
+      title: 'CROX',
+      description: `CROX adalah situs web untuk melakukan pengujian atau evaluasi terhadap layanan dan kegunaan produk digital secara daring. Bergabung sebagai Tester CROX akan memberikan Anda banyak manfaat. Jadi, daftarkan diri Anda sekarang dan nikmati keuntungannya.`,
+      link: 'https://crox.id',
+      picture: 'assets/images/crox.png',
+      techStack: ['Angular'],
+    },
+    {
+      title: 'MoGawe.id',
+      description: `MoGawe.id adalah platform crowdsourcing Indonesia yang menawarkan pekerjaan mikro melalui aplikasi seluler. Platform ini memungkinkan pengguna — yang disebut MoGawers — untuk mendapatkan penghasilan harian dengan menyelesaikan tugas tugas luring sederhana seperti pengambilan foto produk, pengecekan stok, dan survei. Dioperasikan oleh PT Media Baru Internasional, MoGawe dapat diakses di 180+ kota di Indonesia dan ditujukan bagi individu yang mencari pekerjaan fleksibel, seperti mahasiswa, ibu rumah tangga, atau pekerja lepas.`,
+      link: 'https://mogawe.id/',
+      picture: 'assets/images/mogawe.png',
+      techStack: ['Angular', 'Spring Boot', 'MySQL'],
+    },
+    {
+      title: 'MoGawe Business',
+      description: `MoGawe Bisnis adalah aplikasi berbasis web yang dirancang bagi para pebisnis untuk menyederhanakan dan mengelola berbagai jenis pekerjaan dalam bisnis mereka. Aplikasi ini terhubung dengan aplikasi seluler Android yang menawarkan kesempatan untuk mendapatkan penghasilan setidaknya Rp 200.000 per hari dengan menyelesaikan tugas tugas sederhana.`,
+      link: 'https://bisnis.mogawe.id/',
+      picture: 'assets/images/mogawe-bisnis.png',
+      techStack: ['Angular', 'Spring Boot', 'PostgreSQL'],
+    },
+    {
+      title: 'Adeya Mobile Apps',
+      description: `Adeya dalam bahasa Yunani berarti Perizinan, Adeya SFR SOR singkatan dari Radio Frequency Spectrum Service Data Assistant dan Radio Operator Certification. Aplikasi Seluler ini dikhususkan untuk Layanan Perizinan Stasiun Radio (ISR) dan Sertifikasi REOR. Dengan Adeya, diharapkan pemegang SDPPI dan ISR akan lebih dekat dengan layanan perizinan penggunaan spektrum frekuensi radio, layanan data, dan layanan sertifikasi REOR. Ini juga mendukung kemudahan dan kecepatan akses informasi. Aplikasi ini juga merupakan pilihan alternatif untuk platform media layanan selain loket layanan, contact center 159, web elicensing, dan SiDia.`,
+      link: 'https://play.google.com/store/apps/details?id=com.kominfo.sfrsorapp&hl=en_US',
+      picture: 'assets/images/adeya.png',
+      techStack: ['Kotlin', 'Express JS', 'MySQL'],
+    },
+    {
+      title: 'Data Validation Of Frequency Radio (ISR QR CODE)',
+      description: `Proyek Kementerian Komunikasi dan Informatika Republik Indonesia dalam pembuatan aplikasi pendaftaran dan izin stasiun radio serta validasi lisensi stasiun radio, menggunakan Laravel.`,
+      link: 'https://isrcode.postel.go.id/public/login',
+      picture: 'assets/images/isrcode.png',
+      techStack: ['Laravel', 'MySQL'],
+    },
+    {
+      title: 'Website Certification (REOR)',
+      description: `Proyek Kementerian Komunikasi dan Informatika Republik Indonesia dalam pembuatan cetak sertifikasi dan pelatihan, menggunakan PHP YII.`,
+      link: 'https://reor.postel.go.id/',
+      picture: 'assets/images/reor.png',
+      techStack: ['Code Igniter', 'PHP', 'MySQL'],
+    },
+    {
+      title: 'COMPUTER ASSISTED TEST (CAT)',
+      description: `Proyek Kementerian Komunikasi dan Informatika Republik Indonesia dalam pembuatan Computer Assisted Test, menggunakan Laravel.`,
+      link: 'https://cat.postel.go.id/',
+      picture: 'assets/images/cat.png',
+      techStack: ['Laravel', 'PHP', 'MySQL'],
+    },
+    {
+      title: 'QUEUE SYSTEM',
+      description: `Proyek Badan Koordinasi Penanaman Modal dalam pembuatan sistem antrean konsultasi daring, menggunakan Laravel.`,
+      link: 'https://antrian.bkpm.go.id/registrasi/',
+      picture: 'assets/images/bkpm.png',
+      techStack: ['Laravel', 'MySQL'],
     },
   ],
 };

@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRepository } from './app.repository';
-import { DataCollection } from './app.mock';
+import { DataCollectionEn, DataCollectionId } from './app.mock';
 import * as pdfMake from 'pdfmake/build/pdfmake';
 import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 (pdfMake as any).vfs = pdfFonts.pdfMake.vfs;
@@ -22,11 +22,12 @@ import { concatMap, from } from 'rxjs';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit {
-  public profile: ProfileCollection = DataCollection;
+  public profile: ProfileCollection = DataCollectionEn;
   isLoading = false;
   isLoadingNumber: number = this.profile.latestWork.length;
   currentSlide = 0;
   isLightMode = false;
+  currentLang: 'en' | 'id' = 'en';
   
   constructor() {}
 
@@ -84,5 +85,17 @@ export class AppComponent implements AfterViewInit {
     } else {
       document.documentElement.removeAttribute('data-theme');
     }
+  }
+
+  toggleLanguage() {
+    this.currentLang = this.currentLang === 'en' ? 'id' : 'en';
+    this.profile = this.currentLang === 'en' ? DataCollectionEn : DataCollectionId;
+    this.onContentChange();
+  }
+
+  private onContentChange() {
+    // Reset or update any states that depend on profile content
+    this.currentSlide = 0;
+    this.isLoadingNumber = this.profile.latestWork.length;
   }
 }

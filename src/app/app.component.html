@@ -7,6 +7,11 @@
         </a>
         <ul class="arm-social">
           <li>
+            <button class="arm-lang-toggle" (click)="toggleLanguage()" aria-label="Toggle Language">
+              <span>{{ currentLang === 'en' ? 'EN' : 'ID' }}</span>
+            </button>
+          </li>
+          <li>
             <button class="arm-theme-toggle" (click)="toggleTheme()" aria-label="Toggle Theme">
               <i [class]="isLightMode ? 'ri-moon-fill' : 'ri-sun-fill'"></i>
             </button>
@@ -44,7 +49,7 @@
       <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
         <section class="animate-slide-right">
           <div class="arm-hello-badge-container">
-            <span class="animate-bounce arm-hello-badge">HELLO</span>
+            <span class="animate-bounce arm-hello-badge">{{ currentLang === 'en' ? 'HELLO' : 'HALO' }}</span>
           </div>
           <h1 class="arm-banner-title animate-fade-in-up">
             <div [innerHTML]="profile.title"></div>
@@ -57,7 +62,7 @@
 <div class="arm-about-section animate-fade-in-up" id="aboutData" #aboutData>
   <div class="container">
     <section>
-      <h2 class="arm-heading">ABOUT ME</h2>
+      <h2 class="arm-heading">{{ currentLang === 'en' ? 'ABOUT ME' : 'TENTANG SAYA' }}</h2>
       <div [innerHTML]="profile.aboutMe"></div>
     </section>
   </div>
@@ -69,7 +74,7 @@
   #experienceData
 >
   <div class="container">
-    <h2 class="arm-heading">EXPERIENCE</h2>
+    <h2 class="arm-heading">{{ currentLang === 'en' ? 'EXPERIENCE' : 'PENGALAMAN' }}</h2>
     <div class="row arm-experience-list">
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 animate-slide-in-left"
@@ -100,7 +105,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <h2 class="arm-heading mt-30">CORE EXPERTISE</h2>
+        <h2 class="arm-heading mt-30">{{ currentLang === 'en' ? 'CORE EXPERTISE' : 'KEAHLIAN UTAMA' }}</h2>
         <ul class="arm-skills-list animate-stagger">
           <li *ngFor="let skills of profile.coreSkills">{{ skills }}</li>
         </ul>
@@ -116,7 +121,7 @@
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
       >
-        <h2 class="arm-heading">BACKEND & INFRASTRUCTURE</h2>
+        <h2 class="arm-heading">{{ currentLang === 'en' ? 'BACKEND & INFRASTRUCTURE' : 'BACKEND & INFRASTRUKTUR' }}</h2>
         <ul class="arm-skills-list animate-stagger">
           <li *ngFor="let skills of profile.backendSkills">{{ skills }}</li>
         </ul>
@@ -124,7 +129,7 @@
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
       >
-        <h2 class="arm-heading">Quality & Automation</h2>
+        <h2 class="arm-heading">{{ currentLang === 'en' ? 'Quality & Automation' : 'Kualitas & Otomatisasi' }}</h2>
         <ul class="arm-skills-list animate-stagger">
           <li *ngFor="let skills of profile.qualitySkills">{{ skills }}</li>
         </ul>
@@ -132,7 +137,7 @@
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-20"
       >
-        <h2 class="arm-heading">Monitoring & Operations</h2>
+        <h2 class="arm-heading">{{ currentLang === 'en' ? 'Monitoring & Operations' : 'Pemantauan & Operasi' }}</h2>
         <ul class="arm-skills-list animate-stagger">
           <li *ngFor="let skills of profile.monitoringSkills">{{ skills }}</li>
         </ul>
@@ -155,7 +160,7 @@
   #educationData
 >
   <div class="container">
-    <h2 class="arm-heading">EDUCATION</h2>
+    <h2 class="arm-heading">{{ currentLang === 'en' ? 'EDUCATION' : 'PENDIDIKAN' }}</h2>
     <div class="row arm-experience-list">
       <div
         class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 arm-box animate-slide-in-right"
@@ -176,7 +181,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <h2 class="arm-heading mt-30">ACHIEVEMENTS & CERTIFICATIONS</h2>
+        <h2 class="arm-heading mt-30">{{ currentLang === 'en' ? 'ACHIEVEMENTS & CERTIFICATIONS' : 'PENCAPAIAN & SERTIFIKASI' }}</h2>
         <ul class="arm-award">
           <li *ngFor="let award of profile.award">
             <strong>{{ award.title }}</strong> <br />
@@ -192,9 +197,9 @@
   <div class="container">
     <div class="arm-section-header">
       <h2 class="arm-heading" id="latestWorkTitle" #latestWorkTitle>
-        FEATURED PROJECTS
+        {{ currentLang === 'en' ? 'FEATURED PROJECTS' : 'PROYEK UNGGULAN' }}
       </h2>
-      <p class="arm-section-subtitle">A selection of my recent work</p>
+      <p class="arm-section-subtitle">{{ currentLang === 'en' ? 'A selection of my recent work' : 'Pilihan karya terbaru saya' }}</p>
     </div>
 
     <div class="arm-projects-showcase">
@@ -209,7 +214,7 @@
           </ul>
 
           <a [href]="latestWork.link" class="arm-modern-btn" target="_blank">
-            <span>View Project</span>
+            <span>{{ currentLang === 'en' ? 'View Project' : 'Lihat Proyek' }}</span>
             <i class="ri-arrow-right-line"></i>
           </a>
         </div>

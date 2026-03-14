@@ -148,6 +148,8 @@ export class AppComponent implements AfterViewInit {
 - socials: Contact & links
 - ls: List projects
 - snake: Play Modern Snake (HD)
+- pong: Retro Neon Tennis
+- defense: Space Shooter Game
 - matrix: Digital Rain (High Quality)
 - fire: Retro Fire Effect
 - globe: Rotating ASCII Planet
@@ -236,6 +238,14 @@ export class AppComponent implements AfterViewInit {
         this.terminalHistory.push({ type: 'response', text: 'Initializing Snake Game...' });
         this.terminalHistory.push({ type: 'response', text: 'Use Arrow Keys to play. (Game lasts 30s)' });
         this.startSnake();
+        break;
+      case 'pong':
+        this.terminalHistory.push({ type: 'response', text: 'Starting Neon Pong...' });
+        this.startPong();
+        break;
+      case 'defense':
+        this.terminalHistory.push({ type: 'response', text: 'Enemies detected! Deploying Space Defense...' });
+        this.startDefense();
         break;
       default:
         this.terminalHistory.push({ type: 'response', text: `Command not found: ${cmd}. Type "help" for a list of commands.` });
@@ -730,6 +740,113 @@ export class AppComponent implements AfterViewInit {
     \x1b[33m    /   \\      \x1b[36mForecast: Clear with a chance of breakthroughs\x1b[0m
     `;
     this.terminalHistory.push({ type: 'response', text: weather });
+  }
+
+  private startPong() {
+    const existing = document.getElementById('game-container');
+    if (existing) existing.remove();
+    const container = document.createElement('div');
+    container.id = 'game-container';
+    Object.assign(container.style, { position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(13, 17, 23, 0.98)', zIndex: '20', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' });
+    const canvas = document.createElement('canvas');
+    canvas.width = 600; canvas.height = 400;
+    canvas.style.border = '2px solid #58a6ff'; canvas.style.borderRadius = '12px';
+    container.appendChild(canvas);
+    const win = document.querySelector('.terminal-window');
+    if (!win) return;
+    win.appendChild(container);
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let ball = { x: 300, y: 200, dx: 4, dy: 4, radius: 8 };
+    let p1 = { y: 150, score: 0 }, p2 = { y: 150, score: 0 };
+    const padW = 10, padH = 80;
+    
+    const movePaddle = (e: any) => {
+      const rect = canvas.getBoundingClientRect();
+      p1.y = e.clientY - rect.top - padH/2;
+    };
+    canvas.addEventListener('mousemove', movePaddle);
+
+    const draw = () => {
+      ctx.fillStyle = '#0d1117'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#58a6ff'; 
+      ctx.fillRect(0, p1.y, padW, padH);
+      ctx.fillRect(canvas.width - padW, p2.y, padW, padH);
+      ctx.beginPath(); ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2); ctx.fill();
+      
+      // Ball logic
+      ball.x += ball.dx; ball.y += ball.dy;
+      if (ball.y < 0 || ball.y > canvas.height) ball.dy *= -1;
+      if (ball.x < padW && ball.y > p1.y && ball.y < p1.y + padH) ball.dx *= -1.1;
+      if (ball.x > canvas.width - padW && ball.y > p2.y && ball.y < p2.y + padH) ball.dx *= -1.1;
+      
+      // AI
+      p2.y += (ball.y - (p2.y + padH/2)) * 0.1;
+
+      if (ball.x < 0 || ball.x > canvas.width) {
+        ball.x = 300; ball.y = 200; ball.dx = ball.x < 0 ? 4 : -4;
+      }
+    };
+    const loop = setInterval(draw, 1000/60);
+    const cleanup = () => { clearInterval(loop); container.remove(); canvas.removeEventListener('mousemove', movePaddle); };
+    this.terminalCleanupFns.push(cleanup);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerText = 'X'; Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', background: 'transparent', border: 'none', color: '#8b949e', cursor: 'pointer', fontSize: '20px' });
+    closeBtn.onclick = cleanup; container.appendChild(closeBtn);
+  }
+
+  private startDefense() {
+    const existing = document.getElementById('game-container');
+    if (existing) existing.remove();
+    const container = document.createElement('div');
+    container.id = 'game-container';
+    Object.assign(container.style, { position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(13, 17, 23, 0.98)', zIndex: '20', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' });
+    const canvas = document.createElement('canvas');
+    canvas.width = 400; canvas.height = 500;
+    canvas.style.border = '2px solid #ff5f56'; canvas.style.borderRadius = '12px';
+    container.appendChild(canvas);
+    const win = document.querySelector('.terminal-window');
+    if (!win) return;
+    win.appendChild(container);
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let player = { x: 180, w: 40 };
+    let bullets: any[] = [], enemies: any[] = [], score = 0;
+    
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') player.x -= 20;
+      if (e.key === 'ArrowRight') player.x += 20;
+      if (e.key === ' ') bullets.push({ x: player.x + 18, y: 460 });
+    };
+    window.addEventListener('keydown', handler);
+
+    const draw = () => {
+      ctx.fillStyle = '#0d1117'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = '#27c93f'; ctx.fillRect(player.x, 470, player.w, 10);
+      bullets.forEach((b, i) => { 
+        ctx.fillStyle = '#ffbd2e'; ctx.fillRect(b.x, b.y, 4, 10); b.y -= 7;
+        if (b.y < 0) bullets.splice(i, 1);
+      });
+      if (Math.random() > 0.95) enemies.push({ x: Math.random()*380, y: 0 });
+      enemies.forEach((en, i) => {
+        ctx.fillStyle = '#ff5f56'; ctx.fillRect(en.x, en.y, 20, 20); en.y += 2;
+        bullets.forEach((b, bi) => {
+          if (b.x > en.x && b.x < en.x+20 && b.y > en.y && b.y < en.y+20) {
+            enemies.splice(i, 1); bullets.splice(bi, 1); score += 10;
+          }
+        });
+        if (en.y > 500) { if(container.parentNode) cleanup(); }
+      });
+      ctx.fillStyle = '#fff'; ctx.fillText(`SCORE: ${score}`, 10, 20);
+    };
+    const loop = setInterval(draw, 30);
+    const cleanup = () => { clearInterval(loop); container.remove(); window.removeEventListener('keydown', handler); };
+    this.terminalCleanupFns.push(cleanup);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerText = 'X'; Object.assign(closeBtn.style, { position: 'absolute', top: '10px', right: '10px', background: 'transparent', border: 'none', color: '#8b949e', cursor: 'pointer', fontSize: '20px' });
+    closeBtn.onclick = cleanup; container.appendChild(closeBtn);
   }
 
   private onContentChange() {

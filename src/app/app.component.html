@@ -230,3 +230,41 @@
     </div>
   </div>
 </div>
+
+<!-- TERMINAL FEATURE -->
+<button class="arm-terminal-trigger" (click)="toggleTerminal()" [class.active]="isTerminalOpen">
+  <i class="ri-terminal-box-line"></i>
+  <span></span>
+</button>
+
+<div class="arm-terminal-modal" *ngIf="isTerminalOpen" (click)="toggleTerminal()">
+  <div class="terminal-window" (click)="$event.stopPropagation()">
+    <div class="terminal-header">
+      <div class="terminal-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+      </div>
+      <div class="terminal-title">bash — adrian@portfolio</div>
+      <button class="terminal-close" (click)="toggleTerminal()"><i class="ri-close-line"></i></button>
+    </div>
+    <div class="terminal-body" #terminalBody>
+      <div class="terminal-line" *ngFor="let item of terminalHistory">
+        <span *ngIf="item.type === 'command'" class="prompt">adrian:~$ </span>
+        <span [class]="item.type">{{ item.text }}</span>
+      </div>
+      <div class="terminal-line input-line">
+        <span class="prompt">adrian:~$ </span>
+        <input 
+          id="terminal-input"
+          type="text" 
+          [(ngModel)]="terminalInput" 
+          (keydown)="handleTerminalCommand($event)"
+          autocomplete="off"
+          spellcheck="false"
+          autofocus
+        />
+      </div>
+    </div>
+  </div>
+</div>

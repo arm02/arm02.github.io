@@ -405,7 +405,7 @@ img {
   font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   margin-bottom: 24px;
   border-left: 1px solid var(--border-color);
   padding-left: 20px;
@@ -576,7 +576,6 @@ img {
 }
 
 .arm-experience-list {
-  padding-top: 15px;
   margin-left: 10px;
 }
 
@@ -850,7 +849,6 @@ span.arm-department {
   font-weight: 500;
   text-align: left;
   background-color: var(--card-bg);
-  margin-block: 20px;
   border-radius: 12px;
   padding: 32px;
   border: 1px solid var(--border-color);
@@ -1023,7 +1021,7 @@ span.arm-department {
     font-size: 15px;
     line-height: 30px;
     margin-bottom: 30px;
-    text-align: left;
+    text-align: justify;
   }
 
   .arm-skills-list li {
@@ -1305,8 +1303,7 @@ body {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  padding-block: 10px;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -1407,6 +1404,7 @@ body {
   line-height: 1.8;
   color: var(--text-secondary);
   margin-bottom: 30px;
+  text-align: justify;
 }
 
 .arm-project-tech-stack {

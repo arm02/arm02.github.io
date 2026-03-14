@@ -77,8 +77,9 @@
     <h2 class="arm-heading">{{ currentLang === 'en' ? 'EXPERIENCE' : 'PENGALAMAN' }}</h2>
     <div class="row arm-experience-list">
       <div
-        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mb-5 animate-slide-in-left"
-        *ngFor="let experience of profile.experience"
+        class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate-slide-in-left"
+        [class.mb-3]="!isLast"
+        *ngFor="let experience of profile.experience; let isLast = last"
       >
         <section>
           <span class="arm-year">{{ experience.period }}</span>

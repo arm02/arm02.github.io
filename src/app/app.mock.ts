@@ -4,7 +4,7 @@ export const DataCollectionEn: ProfileCollection = {
   fullName: 'Professional Profile',
   shortName: 'Professional Profile',
   title:
-    'Adrian Milano <br /> <span class="arm-title-sub">Senior Full Stack Engineer <br /> Jakarta, Indonesia</span>',
+    'Adrian Milano <br /> <span class="arm-title-sub">Lead Full Stack Engineer <br /> Jakarta, Indonesia</span>',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
@@ -20,7 +20,7 @@ export const DataCollectionEn: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>Senior Full-Stack Software Engineer with <strong>8+ years</strong> of experience designing and building distributed systems across fintech, SaaS, healthcare, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices, Domain-Driven Design (DDD)</strong>, automated testing, and CI/CD. Experienced in <strong>end-to-end architectural design</strong>, API development, <strong>team leadership</strong>, and scalable delivery across complex domains.</p>',
+    '<p>Lead Full-Stack Software Engineer with <strong>8+ years</strong> of experience designing and building distributed systems across fintech, SaaS, healthcare, enterprise, crowdsourcing, and public-service platforms. Strong expertise in <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, and modern Angular.</strong> Proven record improving performance (<strong>−50% page load, −40% bundle size</strong>), system reliability, and developer velocity through <strong>microservices, Domain-Driven Design (DDD)</strong>, automated testing, and CI/CD. Experienced in <strong>end-to-end architectural design</strong>, API development, <strong>team leadership</strong>, and scalable delivery across complex domains.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
@@ -98,33 +98,33 @@ export const DataCollectionEn: ProfileCollection = {
     {
       period: 'December 2025 - Present',
       location: 'Sobat Bisnis Group - Jakarta, Indonesia',
-      title: 'Senior Full Stack Engineer',
+      title: 'Lead Full Stack Engineer — Delivery & Technical Ownership',
       description: [
         {
           title: 'Delivery & Technical Ownership',
           items: [
-            'Owned end-to-end architecture and delivery of <strong>DDD-based healthcare microservices (Spring Boot, monorepo)</strong>, including RBAC, secure service-to-service communication, and scalable domain boundaries',
-            'Implemented <strong>S3 Presigned PUT uploads</strong>, offline-first capabilities, and multiple external system integrations',
-            'Designed and scaled frontend architecture using <strong>Angular, NgRx, Clean Architecture</strong>, and reusable shared core modules',
-            'Set up <strong>Docker-based deployments</strong> and managed JVM tuning & Garbage Collection strategies to ensure application stability and performance in production',
-            'Authored and implemented a team-wide <strong>Engineering Workflow</strong> covering trunk-based development, pre-development standards, and merge request policies',
+            'Architected a <strong>DDD-based healthcare microservices platform (Spring Boot, monorepo)</strong> with RBAC, secure service-to-service communication, <strong>S3 Presigned uploads</strong>, and offline-first capabilities',
+            'Designed scalable frontend architecture using <strong>Angular, NgRx</strong>, and <strong>Clean Architecture</strong> with reusable shared core modules across multiple client projects',
+            'Authored a team-wide <strong>Engineering Workflow</strong> covering trunk-based development, pre-development standards, and MR policies — reducing rework and improving delivery consistency',
+            'Managed <strong>Docker deployments</strong> and <strong>JVM/GC tuning</strong> for production stability at scale',
           ],
         },
         {
           title: 'Leadership & Collaboration',
           items: [
-            'Led and mentored a <strong>team of 6 engineers</strong>, defining technical direction, coding standards, and delivery best practices',
-            'Collaborated closely with clients and stakeholders to translate business requirements into scalable, maintainable technical solutions',
-            'Conducted technical interviews and actively contributed to hiring decisions and team growth',
-            'Delivered internal tech talk as speaker and implementor on <strong>Clean Code & Architecture for Scalable Systems</strong>',
-            'Prepared and aligned team OKR data as part of a Lead Engineer trial, bridging engineering execution with business goals',
+            'Led a cross-functional <strong>team of 9</strong> (4 fullstack + 2 frontend + 1 backend + 2 QA) across multiple client projects, defining technical direction, coding standards, and delivery practices',
+            'Managed <strong>QA engineers directly</strong> — overseeing test planning and automation aligned with product requirements',
+            'Drove <strong>hiring involvement</strong> from interview design to candidate evaluation and team growth',
+            'Delivered internal tech talk on <strong>Clean Code & Architecture</strong> covering SRP, Clean Architecture, anti-patterns, and code review standards',
+            'Aligned <strong>team OKRs</strong> with business goals, bridging engineering execution with delivery metrics and stakeholder reporting',
           ],
         },
         {
           title: 'Quality & Operational Excellence',
           items: [
-            'Improved security and performance by migrating authorization checks from JWT-based validation to <strong>Redis-backed permission caching</strong>',
-            'Established engineering standards and best practices to ensure long-term reliability, scalability, and maintainability of the platform',
+            'Improved security and performance by migrating authorization from JWT validation to <strong>Redis-backed permission caching</strong>',
+            'Drove <strong>Playwright/TypeScript test automation</strong> adoption to reduce manual regression overhead',
+            'Established <strong>engineering standards</strong> across reliability, scalability, and maintainability as the team\'s technical reference point',
           ],
         },
       ],
@@ -448,7 +448,7 @@ export const DataCollectionId: ProfileCollection = {
   fullName: 'Profil Profesional',
   shortName: 'Profil Profesional',
   title:
-    'Adrian Milano <br /> <span class="arm-title-sub">Senior Full Stack Engineer <br /> Jakarta, Indonesia</span>',
+    'Adrian Milano <br /> <span class="arm-title-sub">Lead Full Stack Engineer <br /> Jakarta, Indonesia</span>',
   social: {
     github: 'https://github.com/arm02',
     gitlab: 'https://gitlab.com/arm02',
@@ -464,7 +464,7 @@ export const DataCollectionId: ProfileCollection = {
     client: 20,
   },
   aboutMe:
-    '<p>Senior Full-Stack Software Engineer dengan pengalaman <strong>8+ tahun</strong> dalam merancang dan membangun sistem terdistribusi di sektor fintech, SaaS, kesehatan, enterprise, crowdsourcing, dan platform layanan publik. Memiliki keahlian mendalam di <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, dan Angular modern.</strong> Terbukti berhasil meningkatkan performa (<strong>−50% kecepatan muat halaman, −40% ukuran bundle</strong>), keandalan sistem, dan kecepatan pengembangan melalui <strong>microservices, Domain-Driven Design (DDD)</strong>, pengujian otomatis, dan CI/CD. Berpengalaman dalam <strong>perancangan arsitektur end-to-end</strong>, pengembangan API, <strong>kepemimpinan tim</strong>, dan pengiriman solusi yang skalabel di domain yang kompleks.</p>',
+    '<p>Lead Full-Stack Software Engineer dengan pengalaman <strong>8+ tahun</strong> dalam merancang dan membangun sistem terdistribusi di sektor fintech, SaaS, kesehatan, enterprise, crowdsourcing, dan platform layanan publik. Memiliki keahlian mendalam di <strong>Go, Node.js/Express, Spring Boot, TypeScript, JavaScript, dan Angular modern.</strong> Terbukti berhasil meningkatkan performa (<strong>−50% kecepatan muat halaman, −40% ukuran bundle</strong>), keandalan sistem, dan kecepatan pengembangan melalui <strong>microservices, Domain-Driven Design (DDD)</strong>, pengujian otomatis, dan CI/CD. Berpengalaman dalam <strong>perancangan arsitektur end-to-end</strong>, pengembangan API, <strong>kepemimpinan tim</strong>, dan pengiriman solusi yang skalabel di domain yang kompleks.</p>',
   resumeLink:
     'https://github.com/arm02/resume/blob/main/CV%20Adrian%20Milano.pdf',
   coreSkills: [
@@ -542,33 +542,33 @@ export const DataCollectionId: ProfileCollection = {
     {
       period: 'Desember 2025 - Sekarang',
       location: 'Sobat Bisnis Group - Jakarta, Indonesia',
-      title: 'Senior Full Stack Engineer',
+      title: 'Lead Full Stack Engineer — Delivery & Technical Ownership',
       description: [
         {
-          title: 'Pengiriman & Kepemimpinan Teknis',
+          title: 'Delivery & Technical Ownership',
           items: [
-            'Memegang tanggung jawab penuh atas arsitektur dan pengiriman <strong>microservices kesehatan berbasis DDD (Spring Boot, monorepo)</strong>, termasuk RBAC, komunikasi antar-layanan yang aman, dan batasan domain yang skalabel',
-            'Mengimplementasikan <strong>S3 Presigned PUT uploads</strong>, kemampuan offline-first, dan integrasi dengan berbagai sistem eksternal',
-            'Merancang dan menskalakan arsitektur frontend menggunakan <strong>Angular, NgRx, Clean Architecture</strong>, dan modul inti bersama yang dapat digunakan kembali',
-            'Menyiapkan <strong>deployment berbasis Docker</strong> dan mengelola strategi tuning JVM & Garbage Collection untuk memastikan stabilitas dan performa aplikasi di lingkungan produksi',
-            'Menyusun dan mengimplementasikan <strong>Alur Kerja Rekayasa (Engineering Workflow)</strong> di tingkat tim yang mencakup trunk-based development, standar pra-pengembangan, dan kebijakan merge request',
+            'Merancang arsitektur platform <strong>microservices kesehatan berbasis DDD (Spring Boot, monorepo)</strong> dengan RBAC, komunikasi antar-layanan aman, <strong>S3 Presigned uploads</strong>, dan kemampuan offline-first',
+            'Merancang arsitektur frontend yang skalabel menggunakan <strong>Angular, NgRx</strong>, dan <strong>Clean Architecture</strong> dengan modul inti bersama yang dapat digunakan kembali lintas proyek klien',
+            'Menyusun <strong>Engineering Workflow</strong> tim yang mencakup trunk-based development, standar pra-pengembangan, dan kebijakan MR — mengurangi pengerjaan ulang dan meningkatkan konsistensi pengiriman',
+            'Mengelola <strong>Docker deployment</strong> dan <strong>tuning JVM/GC</strong> untuk stabilitas produksi dalam skala besar',
           ],
         },
         {
-          title: 'Kepemimpinan & Kolaborasi',
+          title: 'Leadership & Collaboration',
           items: [
-            'Memimpin dan membimbing <strong>tim berjumlah 6 engineer</strong>, menetapkan arah teknis, standar penulisan kode, dan praktik terbaik pengiriman solusi',
-            'Berkolaborasi erat dengan klien dan pemangku kepentingan untuk menerjemahkan kebutuhan bisnis menjadi solusi teknis yang skalabel dan mudah dipelihara',
-            'Melakukan wawancara teknis dan berkontribusi aktif dalam keputusan perekrutan serta pertumbuhan tim',
-            'Memberikan sesi berbagi ilmu internal (tech talk) sebagai pembicara dan pelaksana topik <strong>Clean Code & Arsitektur untuk Sistem Berbasis Skala</strong>',
-            'Menyiapkan dan menyelaraskan data OKR tim sebagai bagian dari uji coba Lead Engineer, menghubungkan eksekusi rekayasa dengan tujuan bisnis',
+            'Memimpin tim lintas fungsional <strong>beranggotakan 9 orang</strong> (4 fullstack + 2 frontend + 1 backend + 2 QA) lintas berbagai proyek klien, menentukan arah teknis, standar penulisan kode, dan praktik pengiriman',
+            'Mengelola <strong>QA engineer secara langsung</strong> — mengawasi perencanaan pengujian dan otomatisasi yang selaras dengan persyaratan produk',
+            'Mendorong <strong>keterlibatan perekrutan</strong> mulai dari desain wawancara hingga evaluasi kandidat dan pertumbuhan tim',
+            'Memberikan sesi berbagi ilmu internal (tech talk) tentang <strong>Clean Code & Architecture</strong> yang mencakup SRP, Clean Architecture, anti-patterns, dan standar ulasan kode',
+            'Menyelaraskan <strong>OKR tim</strong> dengan tujuan bisnis, menghubungkan eksekusi rekayasa dengan metrik pengiriman dan laporan pemangku kepentingan',
           ],
         },
         {
-          title: 'Kualitas & Keunggulan Operasional',
+          title: 'Quality & Operational Excellence',
           items: [
-            'Meningkatkan keamanan dan performa dengan memigrasikan pemeriksaan otorisasi dari validasi berbasis JWT ke <strong>cache izin berbasis Redis</strong>',
-            'Menetapkan standar rekayasa dan praktik terbaik untuk memastikan keandalan, skalabilitas, dan kemudahan pemeliharaan jangka panjang pada platform',
+            'Meningkatkan keamanan dan performa dengan memigrasikan otorisasi dari validasi JWT ke <strong>cache izin berbasis Redis</strong>',
+            'Mendorong pengadopsian <strong>otomatisasi pengujian Playwright/TypeScript</strong> untuk mengurangi beban regresi manual',
+            'Menetapkan <strong>standar rekayasa</strong> di seluruh aspek keandalan, skalabilitas, dan kemudahan pemeliharaan sebagai titik referensi teknis tim',
           ],
         },
       ],
